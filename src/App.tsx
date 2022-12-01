@@ -1,9 +1,9 @@
-
+import HomePage from "./layouts/HomePage/HomePage";
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <HomePage />
+    </>
   );
 }
 
