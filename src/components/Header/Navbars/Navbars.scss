@@ -1,0 +1,342 @@
+$greenbuttoncolor: #00a651;
+
+.navbartop {
+    width: 100%;
+    display: flex;
+
+    .logo-container {
+        width: 32%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 250px;
+            height: 70px;
+        }
+    }
+
+    .navbar-links {
+        width: 32%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li {
+                .links {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transition: .6s;
+                    text-decoration: none;
+                    position: relative;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+
+                .links::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: black;
+                    transform-origin: bottom right;
+                    transition: transform .6s ease-out;
+                }
+
+                .links:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+
+    .navbar-icons {
+        width: 36%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .hamburger-menu {
+            width: 15%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .basket {
+            width: 50px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .countsquare {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                position: absolute;
+                top: 20px;
+                right: 0;
+                background-color: red;
+                color: white;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .storeicon:hover {
+                cursor: pointer;
+            }
+        }
+
+        .login {
+            width: 20%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                width: 40px;
+                height: 40px;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                transition: .6s;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        }
+
+        .logout {
+            width: 20%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logout-link {
+                display: none;
+                width: 100px;
+                height: 40px;
+                border-radius: 20px;
+                border: solid 1px black;
+                align-items: center;
+                justify-content: center;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.navbarbottom {
+    width: 100%;
+    display: flex;
+    background-color: #000;
+
+    .categories {
+        display: flex;
+        width: 30%;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-left: 100px;
+
+        .showcatogories-button {
+            width: 250px;
+            height: 50px;
+            border: solid 1px #000;
+            border-radius: 25px;
+            background-color: $greenbuttoncolor;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+
+            .showcatogories {
+                color: white;
+                font-size: 16px;
+            }
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .selections {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 15px;
+            border: solid 1px black;
+            background-color: white;
+            position: absolute;
+            min-width: 400px;
+            height: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            top: 75px;
+            z-index: 1;
+
+            .selection-link {
+                width: 100%;
+                height: 75px;
+                display: flex;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+
+                .icon-part {
+                    width: 15%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .text-part {
+                    width: 85%;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 20px;
+                }
+            }
+
+            .selection-link1 {
+                border-radius: 15px 15px 0 0;
+            }
+
+            .selection-link2 {
+                border-radius: 0 0 15px 15px;
+            }
+
+            .selection-link:hover {
+                background-color: $greenbuttoncolor;
+                color: white;
+
+                .icon {
+                    color: white;
+                }
+            }
+        }
+
+        .passive {
+            display: none;
+        }
+    }
+
+    .search {
+        width: 40%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .find-space {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 35px;
+            border: solid 1px #000;
+
+            input {
+                width: 85%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                border-radius: 30px 0 0 30px;
+                border: none;
+                font-size: 18px;
+                outline: none;
+            }
+
+            button {
+                width: 15%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 0 30px 30px 0;
+                background-color: transparent;
+                background-color: white;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .contact {
+        width: 30%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contactbutton {
+            width: 200px;
+            height: 60px;
+            border: solid 1px $greenbuttoncolor;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: white;
+            transition: .6s;
+
+            .fiphonecall {
+                color: $greenbuttoncolor;
+            }
+
+            p {
+                font-size: 18px;
+                color: $greenbuttoncolor;
+            }
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: $greenbuttoncolor;
+            border: white;
+
+            .fiphonecall {
+                color: white;
+            }
+
+            .contactword {
+                color: white;
+            }
+        }
+    }
+}
