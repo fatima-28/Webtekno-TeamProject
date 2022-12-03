@@ -12,8 +12,8 @@ $greenbuttoncolor: #00a651;
         align-items: center;
 
         img {
-            width: 250px;
-            height: 70px;
+            width: 130px;
+            height: 60px;
         }
     }
 
@@ -75,7 +75,7 @@ $greenbuttoncolor: #00a651;
         .hamburger-menu {
             width: 15%;
             height: 80px;
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
 

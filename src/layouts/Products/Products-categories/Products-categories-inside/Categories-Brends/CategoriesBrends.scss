@@ -1,0 +1,44 @@
+.formBrends {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    .choises {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        gap: 20px;
+        font-size: 20px;
+
+        input[type="radio"] {
+            width: 30px;
+            height: 30px;
+        }
+
+        input:hover {
+            cursor: pointer;
+        }
+        label{
+            cursor: pointer;
+        }
+    }
+
+    button[type="reset"] {
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        background-color: #198754;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: white;
+        gap: 2px;
+    }
+}

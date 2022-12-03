@@ -5,6 +5,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #000;
+    margin-top: 20px;
 
     .footer-top {
         width: 100%;
@@ -17,9 +18,9 @@ footer {
             justify-content: center;
             padding-top: 30px;
 
-            img {
-                width: 250px;
-                height: 70px;
+            .footer-img-for-logo {
+                width: 130px;
+                height: 60px;
             }
         }
 
@@ -30,7 +31,7 @@ footer {
             display: flex;
             flex-direction: column;
 
-            h1 {
+            .footer-h1 {
                 font-size: 20px;
                 color: white;
                 font-weight: 500;
@@ -53,7 +54,7 @@ footer {
             color: white;
             gap: 10px;
 
-            h1 {
+            .footer-h1 {
                 font-size: 20px;
                 font-weight: 500;
             }
@@ -74,12 +75,12 @@ footer {
             gap: 20px;
             color: white;
 
-            h1 {
+            .footer-h1 {
                 font-size: 20px;
                 font-weight: 500;
             }
 
-            p {
+            .footer-p {
                 width: 140px;
             }
         }

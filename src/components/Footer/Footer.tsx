@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { BsInstagram } from 'react-icons/bs'
 import { CiFacebook } from 'react-icons/ci'
 
-import projectlogo from '../Header/Assets/projectlogo.png'
+import projectlogo from '../../Assets/projectlogo-footer.png'
 
 const Footer = () => {
     return (
@@ -13,18 +13,18 @@ const Footer = () => {
             <div className="footer-top">
                 <div className="footer-logo-container">
                     <Link to=''>
-                        <img src={projectlogo} alt="" />
+                        <img className='footer-img-for-logo' src={projectlogo} alt="" />
                     </Link>
                 </div>
                 <div className="footer-follow-us">
-                    <h1>Bizi izləyin</h1>
+                    <h1 className='footer-h1'>Bizi izləyin</h1>
                     <div className="footer-logos">
                         
-                        <Link to='https://www.instagram.com'>
+                        <Link to=''>
                         <BsInstagram size={21} color='white' />
                         </Link>
 
-                        <Link to='https://www.facebook.com'>
+                        <Link to=''>
                         <CiFacebook size={26} color='white'/>
                         </Link>
 
@@ -32,14 +32,14 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-contact">
-                    <h1>Əlaqə</h1>
+                    <h1 className='footer-h1'>Əlaqə</h1>
                     <Link to='' className='footer-links'>+994 55 690 22 96</Link>
                     <Link to='' className='footer-links'>info@greentekno.az</Link>
                 </div>
 
                 <div className="footer-address">
-                    <h1>Ünvan</h1>
-                    <p>19 Azadlıq Ave Bakı, Azərbaycan</p>
+                    <h1 className='footer-h1'>Ünvan</h1>
+                    <p className='footer-p'>19 Azadlıq Ave Bakı, Azərbaycan</p>
                 </div>
             </div>
 
