@@ -77,9 +77,9 @@ export const MainBestSellers = () => {
               </div>
             </div>
           </Carousel>
-          ;
+
         </div>
       </div>
     </>
-  );
-};
+  )
+}
