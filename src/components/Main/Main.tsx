@@ -1,5 +1,5 @@
 import React from 'react'
-import MainPageBanner from './MainPage-Banner/MainPageBanner'
+import MainPageBanner from '../../layouts/HomePage/HomePageMain/MainPageBanner/MainPageBanner'
 export const Main = () => {
   return (
     <main>

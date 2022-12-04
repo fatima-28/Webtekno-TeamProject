@@ -1,0 +1,38 @@
+.bestsellers{
+  
+    .carousel{
+     padding: 30px 40px;
+        .carousel-card{
+            
+            display: flex;
+            flex-direction: column;
+            width: 242px;
+            border-radius: 20px;
+            border: 1px solid #50525436;
+            .img{
+                background-color: #50525436;
+                width: 240px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+             
+                img{
+                    width: 90%;
+                }
+            }
+      
+        }
+    }
+}
+.card{
+    border-radius: .25rem;
+}
+
+.react-multi-carousel-track{
+    li{
+        width: 242px !important;
+        margin-right: 40px;
+    }
+}
+.react-multi-carousel-item{
+    width: 242px !important;
+}
