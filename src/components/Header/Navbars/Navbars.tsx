@@ -14,7 +14,7 @@ import { BsSmartwatch } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 //? Images
-import projectlogo from '../../../Assets/projectlogo.png'
+import projectlogo from '../../../images/projectlogo.png'
 
 const Navbars = () => {
     const [active, setActive] = useState(false);

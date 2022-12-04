@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { BsInstagram } from 'react-icons/bs'
 import { CiFacebook } from 'react-icons/ci'
 
-import projectlogo from '../../Assets/projectlogo-footer.png'
+import projectlogo from '../../images/projectlogo-footer.png'
 
 const Footer = () => {
     return (
@@ -45,7 +45,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p>
-                    © 2021 <span>Greentekno.az</span> All rights reserved. Design & Developed by <span>Deirvlon Technologies</span>
+                    © 2022 <span>Webtekno.az</span> All rights reserved. Design & Developed by <span>Group 7</span>
                 </p>
             </div>
         </footer>
