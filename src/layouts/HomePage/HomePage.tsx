@@ -1,11 +1,12 @@
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
+import HeaderSlider from "../../components/Header/HeaderSlider/HeaderSlider";
+import { MainCustomerService } from "../../components/Mains/HomePageMain/MainCustomerService/MainCustomerService";
+
 const HomePage = () => {
   return (
-    <>
-      <Header />
-      <Footer />
-    </>
+    <div className="homepage">
+      <HeaderSlider />
+      <MainCustomerService />
+    </div>
   )
 }
 

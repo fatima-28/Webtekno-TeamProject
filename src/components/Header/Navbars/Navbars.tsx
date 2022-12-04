@@ -14,7 +14,7 @@ import { BsSmartwatch } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 //? Images
-import projectlogo from '../Assets/projectlogo.png'
+import projectlogo from '../../../images/projectlogo.png'
 
 const Navbars = () => {
     const [active, setActive] = useState(false);
@@ -29,18 +29,18 @@ const Navbars = () => {
     <>
       <nav className='navbartop'>
         <div className="logo-container">
-          <Link to=""><img src={projectlogo} alt="" /></Link>
+          <Link to="/"><img src={projectlogo} alt="" /></Link>
         </div>
         <div className="navbar-links">
           <ul>
             <li><Link className='links' to=''>Ana Səhifə</Link></li>
-            <li><Link className='links' to=''>Məhsullar</Link></li>
+            <li><Link className='links' to='products'>Məhsullar</Link></li>
             <li><Link className='links' to=''>Önərilənlər</Link></li>
           </ul>
         </div>
         <div className="navbar-icons">
           <div className="hamburger-menu">
-
+          <GiHamburgerMenu size={38} color='#001'/>
           </div>
 
 
