@@ -1,5 +1,6 @@
 .customer-service {
     display: grid;
+    gap: 150px;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     margin: auto;
@@ -7,7 +8,7 @@
 
     .item {
         display: flex;
-        justify-content: space-between;
+        
         align-items: center;
 
         img {

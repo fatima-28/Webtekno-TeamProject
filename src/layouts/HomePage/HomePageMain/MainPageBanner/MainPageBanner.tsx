@@ -3,6 +3,7 @@ import './MainPageBanner.scss'
 import mainpageBannerBg from '../../../../images/the-future-of-health-is-on-your-wrist.jpg'
 import { AiOutlineApple } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+
 const MainPageBanner = () => {
   return (
     <section className="mainpage-banner">
@@ -22,7 +23,7 @@ const MainPageBanner = () => {
 
           <div className="mainpage-context-bottom">
             <h1>The future of health is on your wrist</h1>
-            <Link  to="/" className='banner-link'>Daha cox oyren</Link>
+            <Link  to="/" className='banner-link'>{`Daha cox oyren >`} </Link>
           </div>
 
         </div>

@@ -15,3 +15,15 @@
     }
 
 }
+.carousel .thumbs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .thumb.selected{
+    border: 2px solid #333 !important;
+}
+.carousel .thumb:hover{
+    border: 2px solid #00a651 !important;
+    cursor: pointer;
+}
