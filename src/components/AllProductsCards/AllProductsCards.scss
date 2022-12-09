@@ -1,0 +1,118 @@
+.product-single-card {
+    display: flex;
+    flex-direction: column;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-radius: 25px;
+  transition: 2s;
+  width: 200px;
+  height: 250px;
+
+  .card-item-img {
+    height: 150px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    .card-image {
+      width: 140px;
+      height: 100%;
+    }
+  }
+  .card-item-context {
+    transition: 2s;
+    transition: 2s;
+    display: flex;
+    border-top: 1px solid #ebebeb;
+    height: 100px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    .card-item-text-part {
+      .card-item-title {
+        color: black;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .card-item-price {
+        font-weight: 500;
+        color: #00a651;
+        font-size: 19px;
+      }
+    }
+    transition: 2s;
+    .card-item-icon-main {
+      transition: 2s;
+      position: relative;
+      .card-item-icon {
+        position: absolute;
+        bottom: 10px;
+        right: 14px;
+
+        cursor: pointer;
+        transition: 1s ease-out;
+       
+        width: 93px;
+        height: 25px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          transition: 1s ease-out;
+          font-size: 12px;
+          color: rgb(255, 255, 255);
+        }
+        &:hover {
+          background-color: #00a651 !important;
+
+          p{
+            color: white !important;
+          }
+        }
+      }
+    }
+    &:hover {
+      .card-item-icon-main {
+        .card-item-icon {
+          background-color: #ebebeb;
+          p {
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+}
+.pagination{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+.pagination .page-num{
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+  transition: 1.2s;
+
+
+}
+.pagination .page-num:hover{
+background-color: #00a651;
+color: rgb(255, 255, 255);
+
+}
+.pagination .active{
+  background-color: #00a651;
+}

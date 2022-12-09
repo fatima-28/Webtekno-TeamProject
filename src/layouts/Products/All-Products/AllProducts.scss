@@ -1,5 +1,11 @@
+.main-products{
+ display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  
+  //  border: solid 1px #000;
+}
 .all-products{
-    width: 65%;
-    height: 100px;
-    border: solid 1px #000;
+  width: 75%;
 }
