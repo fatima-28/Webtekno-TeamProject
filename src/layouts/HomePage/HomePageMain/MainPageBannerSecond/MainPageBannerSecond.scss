@@ -1,0 +1,53 @@
+$primary-color:rgb(0, 0, 0);
+$button-color:rgba(0, 166, 81, 1);
+$third-color:rgb(255, 255, 255);
+.mainpage-banner2 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+    justify-content: center;
+
+    img {
+       
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 60px;
+        z-index: -1;
+    }
+
+   
+    .total-div{
+        height: 65%;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: $third-color;
+        font-size: 25px;
+
+        .product-link {
+
+            width: 180px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 400;
+            color: $third-color;
+            background: $button-color;
+            border: 1px solid $button-color;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+    }
+}

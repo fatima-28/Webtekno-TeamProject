@@ -1,0 +1,206 @@
+$primary-color:rgb(0, 0, 0);
+$button-color:rgba(0, 166, 81, 1);
+$third-color:rgb(255, 255, 255);
+.grid-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+    .banners {
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+        height: 80vh;
+
+        .left-banner {
+            width: 49.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            .left-banner-1 {
+
+                width: 100%;
+                height: 49.5%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+
+                .left-banners-h3 {
+                    color: $third-color;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 35px;
+                }
+
+                .left-banners-button {
+                    width: 120px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $third-color;
+                    background: $button-color;
+                    border: 1px solid $button-color;
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                }
+
+                .left-banners-img {
+                    position: absolute;
+                    z-index: -1;
+                    border-radius: 30px;
+                    height: 100%;
+                    width: 100%;
+                }
+
+            }
+
+            .left-banner-2 {
+                width: 100%;
+                height: 49%;
+                display: flex;
+                justify-content: space-between;
+
+                .left-banner-2-1 {
+                    height: 100%;
+                    width: 49%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 10px;
+
+                    .left-banners-img {
+                        border-radius: 30px;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: -1;
+
+                    }
+
+                    .left-banners-h3 {
+                        color: $third-color;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 35px;
+                    }
+
+                    .left-banners-button {
+                        width: 120px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $third-color;
+                        background: $button-color;
+                        border: 1px solid $button-color;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .left-banner-2-2 {
+                    height: 100%;
+                    width: 49%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: end;
+
+                    .left-banners-img {
+                        position: absolute;
+                        border-radius: 30px;
+                        height: 100%;
+                        width: 100%;
+                        z-index: -1;
+                    }
+
+                    .left-banners-h3 {
+                        color: $third-color;
+                        text-align: center;
+                        font-size: 35px;
+                        font-weight: 400;
+                    }
+
+                    .left-banners-button {
+                        width: 120px;
+                        height: 40px;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $third-color;
+                        background: $button-color;
+                        border: 1px solid $button-color;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                    }
+
+                }
+
+
+            }
+        }
+
+        .right-banner {
+            position: relative;
+            border-radius: 50px;
+            background-color: $primary-color;
+            z-index: -2;
+            width: 49.5%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+
+
+            .right-banners-img {    
+                width: 330px;
+                height:400px;
+                position: absolute;
+                bottom: 100px;
+                z-index: -1;
+                border-radius: 50px;
+            }
+
+            .right-banners-h3 {
+                position: relative;
+                color: $third-color;
+                text-align: center;
+                font-weight: 400;
+                font-size: 35px;
+            }
+
+            .right-banners-button {
+                position: relative;
+                width: 120px;
+                height: 40px;
+                font-size: 14px;
+                font-weight: 400;
+                color: $third-color;
+                background: $button-color;
+                border: 1px solid $button-color;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+        }
+
+
+
+
+    }
+}
