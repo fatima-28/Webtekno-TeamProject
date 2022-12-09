@@ -76,11 +76,10 @@
           color: #0066cf;
           text-decoration: none;
           margin-left: 45px;
+          display: flex;
+          align-items: center;
         }
-        .banner-link::after {
-          content: ">";
-          margin-left: 10px;
-        }
+      
       }
     }
   }

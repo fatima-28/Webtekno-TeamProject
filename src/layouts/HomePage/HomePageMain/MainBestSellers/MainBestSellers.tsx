@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import carouselimg1 from "../../../../images/iphone.png";
 
 export const MainBestSellers = () => {
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -25,19 +26,25 @@ export const MainBestSellers = () => {
       items: 1,
     },
   };
+
   return (
     <>
       <div className="bestsellers">
         <div className="header">Çox Satılanlar </div>
         <div className="carousel">
-          <Carousel responsive={responsive}>
+          <Carousel 
+            infinite
+            ssr={true}
+            responsive={responsive}
+            containerClass="carousel-container"
+           >
             <div className="carousel-card">
               <div className="img">
                 <img src={carouselimg1} alt="" />
               </div>
               <div className="desc">
                 <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p>null</p>
+                <p className="price-product">null</p>
               </div>
             </div>
             <div className="carousel-card">
@@ -46,7 +53,7 @@ export const MainBestSellers = () => {
               </div>
               <div className="desc">
                 <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p>null</p>
+                <p className="price-product">null</p>
               </div>
             </div>
             <div className="carousel-card">
@@ -55,7 +62,7 @@ export const MainBestSellers = () => {
               </div>
               <div className="desc">
                 <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p>null</p>
+                <p className="price-product">null</p>
               </div>
             </div>
             <div className="carousel-card">
@@ -64,7 +71,7 @@ export const MainBestSellers = () => {
               </div>
               <div className="desc">
                 <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p>null</p>
+                <p className="price-product">null</p>
               </div>
             </div>
             <div className="carousel-card">
@@ -73,11 +80,10 @@ export const MainBestSellers = () => {
               </div>
               <div className="desc">
                 <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p>null</p>
+                <p className="price-product">null</p>
               </div>
             </div>
           </Carousel>
-
         </div>
       </div>
     </>

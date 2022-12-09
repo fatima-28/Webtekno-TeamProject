@@ -1,9 +1,10 @@
 .bestsellers{
-  
+    width: 80%;
+    margin: auto;
     .carousel{
-     padding: 30px 40px;
+        display: flex;
+        padding: 40px 0px;
         .carousel-card{
-            
             display: flex;
             flex-direction: column;
             width: 242px;
@@ -19,6 +20,12 @@
                     width: 90%;
                 }
             }
+            .desc{
+                padding: 20px;
+                .price-product::after{
+                    content: ' ₼';
+                }
+            }
       
         }
     }
@@ -26,13 +33,6 @@
 .card{
     border-radius: .25rem;
 }
-
-.react-multi-carousel-track{
-    li{
-        width: 242px !important;
-        margin-right: 40px;
-    }
-}
-.react-multi-carousel-item{
-    width: 242px !important;
+.carousel-container{
+    padding-left: 9%;
 }
