@@ -1,11 +1,10 @@
-import "./MainBestSellers.scss";
+import "./MainRecommended.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-//! Images
 import carouselimg1 from "../../../../images/iphone.png";
 
-export const MainBestSellers = () => {
+export const MainRecommended = () => {
 
   const responsive = {
     superLargeDesktop: {
@@ -29,7 +28,7 @@ export const MainBestSellers = () => {
 
   return (
     <>
-      <div className="bestsellers">
+      <div className="recommended">
         <div className="header">Çox Satılanlar </div>
         <div className="carousel">
           <Carousel 
