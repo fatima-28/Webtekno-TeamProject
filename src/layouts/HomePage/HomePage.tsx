@@ -13,9 +13,9 @@ const HomePage = () => {
       <MainCustomerService />
       <MainBestSellers />
       <MainPageBanner />
-     <MainPageContainer/>
-     <MainPageGrid/>
-     <MainPageBannerSecond/>
+      <MainPageContainer/>
+      <MainPageGrid/>
+      <MainPageBannerSecond/>
     </div>
   )
 }

@@ -1,0 +1,15 @@
+
+@import '../variables';
+.banner-button {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $third-color;
+    background: $button-color;
+    border: 1px solid $button-color;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer !important;
+}

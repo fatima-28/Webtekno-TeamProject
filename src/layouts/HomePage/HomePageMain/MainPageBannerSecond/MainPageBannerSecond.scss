@@ -1,20 +1,21 @@
-$primary-color:rgb(0, 0, 0);
-$button-color:rgba(0, 166, 81, 1);
-$third-color:rgb(255, 255, 255);
+$primary-color: rgb(0, 0, 0);
+$button-color: rgba(0, 166, 81, 1);
+$third-color: rgb(255, 255, 255);
+
 .mainpage-banner2 {
     width: 100%;
     height: 400px;
     display: flex;
     position: relative;
     margin-top: 40px;
-
     margin: 0;
     padding: 0;
     align-items: flex-end;
     justify-content: center;
+    margin-bottom: 40px;
 
     img {
-       
+
         width: 100%;
         height: 400px;
         position: absolute;
@@ -22,11 +23,11 @@ $third-color:rgb(255, 255, 255);
         z-index: -1;
     }
 
-   
-    .total-div{
+
+    .total-div {
         height: 65%;
         display: flex;
-        
+
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
