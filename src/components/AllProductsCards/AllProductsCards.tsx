@@ -2,6 +2,7 @@ import React from 'react'
 import './AllProductsCards.scss'
 import ProductImg from '../../images/productIphone.png'
 const AllProductsCards = () => {
+  
   return (
       <div className="product-single-card">
           <div className="single-card-item card-item-img">
