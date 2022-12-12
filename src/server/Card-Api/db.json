@@ -1,115 +1,327 @@
 {
   "cards": [
     {
-      "price": 1900,
-      "title": "nIphone 13 Pro max",
+      "price": 4900,
+      "category": "phone",
+      "title": "Iphone 13 Pro max",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
       "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
     },
     {
       "price": 2000,
-      "title": "Apple Ipad",
+      "category": "phone",
+      "title": " Ipad 11",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
       "url": "https://w7.pngwing.com/pngs/1004/953/png-transparent-ipad-mini-2-ipad-air-ipad-3-ipad-mini-4-ipad-gadget-electronics-ipad-mini.png"
     },
     {
+      "price": 500,
+      "category": "airpods",
+      "title": " mini X",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1632861342000"
+    },
+    {
+      "price": 7499,
+      "category": "laptop",
+      "title": "MacOs 2018",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDa0qGuhDrBZW3bo4nT3rJub8KoPd2oB7RBQ&usqp=CAU"
+    },
+    {
+      "price": 2100,
+      "category": "smartwatch",
+      "title": "Apple watch X10",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://media.istockphoto.com/id/496730484/photo/apple-watch-sport-42mm-silver-aluminum-case-with-white-band.jpg?s=612x612&w=0&k=20&c=RY2MGp4S-OVqAZm1ZCUDhM6KSmfAJ02RU51l4mJa2EA="
+    },
+    {
+      "price": 3999,
+      "category": "phone",
+      "title": " Ipad mini",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.cimri.io/image/1000x1000/apple-ipad-mini-3-64gb-4g-gumus_12128187.jpg"
+    },
+    {
+      "price": 499,
+      "category": "airpods",
+      "title": " mini Z",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1660803972361"
+    },
+    {
+      "price": 3000,
+      "category": "smartwatch",
+      "title": "Apple watch X11",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://n11scdn.akamaized.net/a1/602_857/10/08/63/11/IMG-7475181451705674056.jpg"
+    },
+    {
+      "price": 7499,
+      "category": "laptop",
+      "title": "MacOs 2019",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://m.media-amazon.com/images/I/51cNAljYo6L._AC_SX569_.jpg"
+    },
+    {
+      "price": 2999,
+      "category": "smartwatch",
+      "title": "Apple watch X12",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCD9sF9KpoAPXKuoh5gnNi080lzQAGDktZSA&usqp=CAU"
+    },
+    {
+      "price": 3999,
+      "category": "phone",
+      "title": " Ipad RoseGold",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.cimri.io/image/1000x1000/apple-ipad-8-128gb-wi-fi_310121539.jpg"
+    },
+    {
+      "price": 1199,
+      "category": "smartwatch",
+      "title": "Apple watch soft",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://www.banco.com.tr/ProductImages/540646/big/190199865655_01.jpg"
+    },
+    {
+      "price": 8999,
+      "category": "laptop",
+      "title": "MacBook Pro",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.cimri.io/image/1000x1000/apple-macbook-pro-md101tua-laptop-notebook_36047308.jpg"
+    },
+    {
+      "price": 5900,
+      "category": "phone",
+      "title": "Iphone 12 ",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://www.91-img.com/gallery_images_uploads/1/2/12577884f9b0c66287c790cb131070042ff39405.jpg?tr=h-550,w-0,c-at_max"
+    },
+    {
+      "price": 5900,
+      "category": "phone",
+      "title": "Iphone 8 rose ",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuo4VRaWEimmOQ7F5mSRqklFJTO3-0XHtZAk4MD559vmkFhj7JXH_AGtFd3C5jITT6Cg&usqp=CAU"
+    },
+    {
+      "price": 5999,
+      "category": "smartwatch",
+      "title": "Apple watch Red",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://img.xfinitymobile.com/image/fetch/e_trim/w_420,h_420,c_fit,f_auto,q_auto,fl_lossy/https%3A%2F%2Fimg.xfinitymobile.com%2Fimage%2Fupload%2Fv1662588619%2Fclient%2Fcatalog%2Fdevices%2Fapple%2FApple_Watch_Series_8_LTE_41mm_PRODUCTRED_Aluminum_PRODUCTRED_Sport_Band_PRI.jpg"
+    },
+    {
+      "price": 499,
+      "category": "airpods",
+      "title": " mini 3rd G",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "data:image/jpeg;base64,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"
+    },
+    {
+      "price": 7999,
+      "category": "laptop",
+      "title": "MacBook ",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRurZZBX-7L_1oVfhgP_eD9EU3Sh0x0Zpw1C_LvufG2Izns0XogWvTjruA-1NOol2Mlw&usqp=CAU"
+    },
+    {
+      "price": 1499,
+      "category": "smartwatch",
+      "title": "Apple watch PNK",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://img-morhipo.mncdn.com/mnresize/1200/1645/productimages/i/8682225204962/[img][5][1].jpg?1030"
+    },
+    {
+      "price": 1200,
+      "category": "airpods",
+      "title": "Max White",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-compare-airpods-max-202209_FMT_WHH?wid=272&hei=324&fmt=jpeg&qlt=90&.v=1660804051723"
+    },
+    {
+      "price": 5900,
+      "category": "phone",
+      "title": "Iphone X silver",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.easycep.com/assets/_web/img/product/2022/04/l_apple-iphone-x-363-2-1649143689.webp"
+    },
+    {
+      "price": 699,
+      "category": "airpods",
+      "title": " Max Gray",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-spacegray-202011_FV1_FMT_WHH?wid=940&hei=800&fmt=jpeg&qlt=90&.v=1604776025000"
+    },
+    {
+      "price": 4900,
+      "category": "phone",
+      "title": "Iphone 13 Pro max",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+    },
+    {
       "price": 2000,
-      "title": "Apple Ipad",
+      "category": "phone",
+      "title": " Ipad 11",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
       "url": "https://w7.pngwing.com/pngs/1004/953/png-transparent-ipad-mini-2-ipad-air-ipad-3-ipad-mini-4-ipad-gadget-electronics-ipad-mini.png"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 500,
+      "category": "airpods",
+      "title": " mini X",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1632861342000"
     },
     {
-      "price": 2000,
-      "title": "Apple 11 mini",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 7499,
+      "category": "laptop",
+      "title": "MacOs 2018",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDa0qGuhDrBZW3bo4nT3rJub8KoPd2oB7RBQ&usqp=CAU"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 ",
-      "url": "https://png.monster/wp-content/uploads/2022/09/png.monster-209.png"
+      "price": 2100,
+      "category": "smartwatch",
+      "title": "Apple watch X10",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://media.istockphoto.com/id/496730484/photo/apple-watch-sport-42mm-silver-aluminum-case-with-white-band.jpg?s=612x612&w=0&k=20&c=RY2MGp4S-OVqAZm1ZCUDhM6KSmfAJ02RU51l4mJa2EA="
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 3999,
+      "category": "phone",
+      "title": " Ipad mini",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.cimri.io/image/1000x1000/apple-ipad-mini-3-64gb-4g-gumus_12128187.jpg"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 499,
+      "category": "airpods",
+      "title": " mini Z",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1660803972361"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 3000,
+      "category": "smartwatch",
+      "title": "Apple watch X11",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://n11scdn.akamaized.net/a1/602_857/10/08/63/11/IMG-7475181451705674056.jpg"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 7499,
+      "category": "laptop",
+      "title": "MacOs 2019",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://m.media-amazon.com/images/I/51cNAljYo6L._AC_SX569_.jpg"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 2999,
+      "category": "smartwatch",
+      "title": "Apple watch X12",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCD9sF9KpoAPXKuoh5gnNi080lzQAGDktZSA&usqp=CAU"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 3999,
+      "category": "phone",
+      "title": " Ipad RoseGold",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.cimri.io/image/1000x1000/apple-ipad-8-128gb-wi-fi_310121539.jpg"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 1199,
+      "category": "smartwatch",
+      "title": "Apple watch soft",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://www.banco.com.tr/ProductImages/540646/big/190199865655_01.jpg"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 8999,
+      "category": "laptop",
+      "title": "MacBook Pro",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.cimri.io/image/1000x1000/apple-macbook-pro-md101tua-laptop-notebook_36047308.jpg"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 5900,
+      "category": "phone",
+      "title": "Iphone 12 ",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://www.91-img.com/gallery_images_uploads/1/2/12577884f9b0c66287c790cb131070042ff39405.jpg?tr=h-550,w-0,c-at_max"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 5900,
+      "category": "phone",
+      "title": "Iphone 8 rose ",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuo4VRaWEimmOQ7F5mSRqklFJTO3-0XHtZAk4MD559vmkFhj7JXH_AGtFd3C5jITT6Cg&usqp=CAU"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 5999,
+      "category": "smartwatch",
+      "title": "Apple watch Red",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://img.xfinitymobile.com/image/fetch/e_trim/w_420,h_420,c_fit,f_auto,q_auto,fl_lossy/https%3A%2F%2Fimg.xfinitymobile.com%2Fimage%2Fupload%2Fv1662588619%2Fclient%2Fcatalog%2Fdevices%2Fapple%2FApple_Watch_Series_8_LTE_41mm_PRODUCTRED_Aluminum_PRODUCTRED_Sport_Band_PRI.jpg"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 499,
+      "category": "airpods",
+      "title": " mini 3rd G",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "data:image/jpeg;base64,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"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 7999,
+      "category": "laptop",
+      "title": "MacBook ",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRurZZBX-7L_1oVfhgP_eD9EU3Sh0x0Zpw1C_LvufG2Izns0XogWvTjruA-1NOol2Mlw&usqp=CAU"
     },
     {
-      "price": 2000,
-      "title": "Apple 13 Pro max",
-      "url": "https://png.monster/wp-content/uploads/2022/09/png.monster-209.png"
-    },
-
-    {
-      "price": 1490,
-      "title": " Iphone 12 Pro max",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 1499,
+      "category": "smartwatch",
+      "title": "Apple watch PNK",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://img-morhipo.mncdn.com/mnresize/1200/1645/productimages/i/8682225204962/[img][5][1].jpg?1030"
     },
     {
-      "price": 5000,
-      "title": "Apple 11 Pro",
-      "url": "https://www.pngitem.com/pimgs/m/525-5259250_apple-ios-13-iphone-hd-png-download-apple.png"
+      "price": 1200,
+      "category": "airpods",
+      "title": "Max White",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-compare-airpods-max-202209_FMT_WHH?wid=272&hei=324&fmt=jpeg&qlt=90&.v=1660804051723"
+    },
+    {
+      "price": 5900,
+      "category": "phone",
+      "title": "Iphone X silver",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://cdn.easycep.com/assets/_web/img/product/2022/04/l_apple-iphone-x-363-2-1649143689.webp"
+    },
+    {
+      "price": 699,
+      "category": "airpods",
+      "title": " Max Gray",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-spacegray-202011_FV1_FMT_WHH?wid=940&hei=800&fmt=jpeg&qlt=90&.v=1604776025000"
+    },
+    {
+      "price": 1200,
+      "category": "smartwatch",
+      "title": "Apple watch X",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://img.xfinitymobile.com/image/fetch/e_trim/w_420,h_420,c_fit,f_auto,q_auto,fl_lossy/https%3A%2F%2Fimg.xfinitymobile.com%2Fimage%2Fupload%2Fv1632944566%2Fclient%2Fcatalog%2Fdevices%2Fapple%2FApple_Watch_Series_7_LTE_45mm_Blue_Aluminum_Abyss_Blue_Sport_Band_PRI.png"
+    },
+    
+    {
+      "price": 699,
+      "category": "airpods",
+      "title": " Max Pink",
+      "description": "lorem ipsum dolor sit amet amegoue ret ametsit",
+      "url": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-pink-202011_FMT_WHH?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604615276000"
     }
   ]
 }
