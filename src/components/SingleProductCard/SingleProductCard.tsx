@@ -1,7 +1,9 @@
 import React from 'react'
-import './AllProductsCards.scss'
+import './SingleProductCard.scss'
+
 import ProductImg from '../../images/productIphone.png'
-const AllProductsCards = () => {
+const SingleProductCard = (
+) => {
   
   return (
       <div className="product-single-card">
@@ -24,4 +26,4 @@ const AllProductsCards = () => {
   )
 }
 
-export default AllProductsCards
+export default SingleProductCard

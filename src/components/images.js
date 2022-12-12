@@ -39,20 +39,24 @@ export default function Images(props) {
 
     <>
       <div className="main-products">
-        {currentItems.map((image) => {
-          return (
+        {currentItems.map((image) => 
             <div className="product-single-card1">
-
-              <div className="single-card-item card-item-img">
+              <div className="single-card-item card-item-img" key={image.id}>
                 <img src={image.url} alt={image.title} className="card-image" />
               </div>
               <div className="single-card-item card-item-context">
-                <div className="card-item-text-part">
-                  <p className="card-item-title card-text-part">
+                <div className="card-item-text-part ">
+                  <p
+                    className="card-item-title card-text-part"
+                    
+                  >
                     {image.title}
                   </p>
 
-                  <p className="card-item-price card-text-part">
+                  <p
+                    className="card-item-price card-text-part"
+                   
+                  >
                     {image.price} $
                   </p>
                 </div>
@@ -63,8 +67,8 @@ export default function Images(props) {
                 </div>
               </div>
             </div>
-          );
-        })}
+          
+        )}
       </div>
       <ReactPaginate
         breakLabel="..."

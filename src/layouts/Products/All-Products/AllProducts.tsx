@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import './AllProducts.scss';
-import ProductCards from "../../../components/AllProductsCards/AllProductsCards";
+import ProductCard from "../../../components/SingleProductCard/SingleProductCard";
 import Images from "../../../components/images"
 
 const AllProducts = () => {
@@ -14,30 +14,24 @@ const AllProducts = () => {
                 setImages(data);
             })
         )
-        //fixing
+        //fix: components with array, Use props
 
     }, [])
     return (
         <section className='all-products'>
             <div className="main-products">
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
             </div>
             <div>
                 <Images data={images} />
