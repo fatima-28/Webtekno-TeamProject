@@ -14,28 +14,18 @@ const AllProducts = () => {
                 setImages(data);
             })
         )
-        //fix: components with array, Use props
+        //fix:  Use props
 
     }, [])
     return (
         <section className='all-products'>
-            <div className="main-products">
+            <Images data={images} />
+            <div className="main-products none-main-products">
                 <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+          
+               
             </div>
-            <div>
-                <Images data={images} />
-            </div>
+           
         </section>
     )
 }

@@ -17,7 +17,7 @@ const SingleProductCard = (
               </div>
               <div className="card-item-icon-main">
                   <div className="card-item-icon">
-                      {/* <i className="fa-solid fa-bag-shopping"></i> */}
+                    
                       <p>Add to cart</p>
                   </div>
               </div>
