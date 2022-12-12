@@ -20,7 +20,8 @@ const AllProducts = () => {
     return (
         <section className='all-products'>
             <Images data={images} />
-            <div className="main-products none-main-products">
+            
+            <div className="main-products none-main-products ">
                 <ProductCard />
           
                
