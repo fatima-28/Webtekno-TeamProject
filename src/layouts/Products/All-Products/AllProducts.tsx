@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import './AllProducts.scss';
-import ProductCard from "../../../components/SingleProductCard/SingleProductCard";
+
 import Images from "../../../components/images"
 
 const AllProducts = () => {
@@ -18,12 +18,10 @@ const AllProducts = () => {
 
     }, [])
     return (
-        <section className='all-products'>
-            <Images data={images} />
-            
-            <div className="main-products none-main-products ">
-                <ProductCard />
-          
+        <section className='all-products'>   
+            <div className="main-products  ">
+                <Images data={images} />
+        
                
             </div>
            

@@ -1,8 +1,9 @@
-@import '../variables';
+@import "../variables";
 
-.product-single-card,.product-single-card1 {
-    display: flex;
-    flex-direction: column;
+.product-single-card,
+.product-single-card1 {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   border: 1px solid $borders-color;
   border-radius: 25px;
@@ -25,9 +26,8 @@
     }
   }
   .card-item-context {
-    transition: 2s;
-    transition: 2s;
     display: flex;
+    flex-direction: column;
     border-top: 1px solid $borders-color;
     height: 100px;
     border-bottom-left-radius: 25px;
@@ -35,7 +35,14 @@
     padding-left: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
+
+    
     .card-item-text-part {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+
       .card-item-title {
         color: $black-color;
         font-weight: 700;
@@ -47,75 +54,63 @@
         font-size: 19px;
       }
     }
-    transition: 2s;
+
     .card-item-icon-main {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
       transition: 2s;
-      position: relative;
-      .card-item-icon {
-        position: absolute;
-        bottom: 10px;
-        right: 14px;
-
-        cursor: pointer;
-        transition: 1s ease-out;
-       
-        width: 93px;
-        height: 25px;
-        background-color: $white-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        p {
-          transition: 1s ease-out;
-          font-size: 12px;
-          color: $white-color;
-        }
-        &:hover {
-          background-color: $theme-color !important;
-
-          p{
-            color: $white-color !important;
-          }
-        }
+      padding-right: 15px;
+      padding-bottom: 10px;
+    
+      .card-button {
+        display: none;
       }
     }
     &:hover {
-      .card-item-icon-main {
-        .card-item-icon {
-          background-color: $borders-color;
-          p {
-            font-size: 12px;
-            color: $black-color;
-          }
+      .card-button {
+        cursor: pointer;
+        width: 80px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s ease-out;
+        font-size: 12px;
+        border: none;
+        color: $black-color !important;
+        &:hover {
+          background-color: $theme-color !important;
+          color: $white-color !important;
         }
       }
     }
   }
 }
-.pagination{
+.pagination {
+  margin: 0 auto;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
-   margin-top: 5rem;
+  margin-top: 5rem;
   font-size: 1.2rem;
   gap: 15px;
 }
-.pagination .page-num{
+.pagination .page-num {
   padding: 8px 15px;
   cursor: pointer;
   border-radius: 3px;
   font-weight: 400;
   transition: 1.2s;
-
-
 }
-.pagination .page-num:hover{
-background-color: $theme-color;
-color: $white-color;
-
+.pagination .page-num:hover {
+  background-color: $theme-color;
+  color: $white-color;
 }
-.pagination .active{
+.pagination .active {
   background-color: $theme-color;
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
+import '../components/SingleProductCard/SingleProductCard.scss'
 export default function Images(props) {
   const { data } = props;
   const [currentItems, setCurrentItems] = useState([]);
@@ -21,29 +22,26 @@ export default function Images(props) {
 
   return (
     <>
-      <div className="main-products">
-        {currentItems.map((image) => (
-          <div className="product-single-card1">
-            <div className="single-card-item card-item-img" key={image.id}>
-              <img src={image.url} alt={image.title} className="card-image" />
-            </div>
-            <div className="single-card-item card-item-context">
-              <div className="card-item-text-part ">
-                <p className="card-item-title card-text-part">{image.title}</p>
+      {currentItems.map((image) => (
+        <div className="product-single-card1">
+          <div className="single-card-item card-item-img" key={image.id}>
+            <img src={image.url} alt={image.title} className="card-image" />
+          </div>
+          <div className="single-card-item card-item-context">
+            <div className="card-item-text-part ">
+              <p className="card-item-title card-text-part">{image.title}</p>
 
-                <p className="card-item-price card-text-part">
-                  {image.price} $
-                </p>
-              </div>
-              <div className="card-item-icon-main">
-                <div className="card-item-icon">
-                  <p>Add to cart</p>
-                </div>
-              </div>
+              <p className="card-item-price card-text-part">{image.price} $</p>
+            </div>
+            <div className="card-item-icon-main">
+           
+                <button className="card-button">Add to cart</button>
+              
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
