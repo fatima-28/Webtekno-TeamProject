@@ -44,11 +44,11 @@ export default function Images(props) {
 
       <ReactPaginate
         breakLabel="..."
-        nextLabel="next >"
+        nextLabel=">"
         onPageChange={handlePageClick}
         pageRangeDisplayed={3}
         pageCount={pageCount}
-        previousLabel="< previous"
+        previousLabel="< "
         renderOnZeroPageCount={null}
         containerClassName="pagination"
         pageLinkClassName="page-num"
