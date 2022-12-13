@@ -11,32 +11,32 @@ const MainPageContainer = () => {
               <img src={ThirdImg} alt="card"/>
                   <div className="mainpage-card-text">
                       <h3 className="title-of-card">Apple Airpods</h3>
-                      <p>Indi satishda</p>
+                      <p>İndi satişda</p>
                   </div>
                   <button className="mainpage-button">
-                      Etrafli
+                      Ətraflı
                   </button>
           </div>
           <div className="mainpage-container-box">
               <img src={FirstImg} alt="card"/>
                   <div className="mainpage-card-text">
                       <h3 className="title-of-card">Apple Airpods</h3>
-                      <p>Indi satishda</p>
+                      <p>İndi satışda</p>
 
                   </div>
                   <button className="mainpage-button">
-                      Etrafli
+                      Ətraflı
                   </button>
           </div>
           <div className="mainpage-container-box">
               <img src={SecondImg} alt="card"/>
                   <div className="mainpage-card-text">
                       <h3 className="title-of-card">Apple Airpods</h3>
-                      <p>Indi satishda</p>
+                      <p>İndi satışda</p>
 
                   </div>
                   <button className="mainpage-button">
-                      Etrafli
+                      Ətraflı
                   </button>
           </div>
       </section>

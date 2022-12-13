@@ -2,7 +2,7 @@ import "./MainRecommended.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import carouselimg1 from "../../../../images/iphone.png";
+import CarouselCard from "../../../../components/CarouselCard/CarouselCard";
 
 export const MainRecommended = () => {
 
@@ -29,7 +29,7 @@ export const MainRecommended = () => {
   return (
     <>
       <div className="recommended">
-        <div className="header">Çox Satılanlar </div>
+        <div className="header">Önərilənlər </div>
         <div className="carousel">
           <Carousel 
             infinite
@@ -37,51 +37,13 @@ export const MainRecommended = () => {
             responsive={responsive}
             containerClass="carousel-container"
            > 
-            <div className="carousel-card">
-              <div className="img">
-                <img src={carouselimg1} alt="" />
-              </div>
-              <div className="desc">
-                <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p className="price-product">null</p>
-              </div>
-            </div>
-            <div className="carousel-card">
-              <div className="img">
-                <img src={carouselimg1} alt="" />{" "}
-              </div>
-              <div className="desc">
-                <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p className="price-product">null</p>
-              </div>
-            </div>
-            <div className="carousel-card">
-              <div className="img">
-                <img src={carouselimg1} alt="" />{" "}
-              </div>
-              <div className="desc">
-                <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p className="price-product">null</p>
-              </div>
-            </div>
-            <div className="carousel-card">
-              <div className="img">
-                <img src={carouselimg1} alt="" />{" "}
-              </div>
-              <div className="desc">
-                <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p className="price-product">null</p>
-              </div>
-            </div>
-            <div className="carousel-card">
-              <div className="img">
-                <img src={carouselimg1} alt="" />{" "}
-              </div>
-              <div className="desc">
-                <h5>iPhone 13 mini 128 GB | Pink (çəhrayı)</h5>
-                <p className="price-product">null</p>
-              </div>
-            </div>
+            <CarouselCard/>
+            <CarouselCard/>
+            <CarouselCard/>
+            <CarouselCard/>
+            <CarouselCard/>
+            <CarouselCard/>
+            
           </Carousel>
         </div>
       </div>

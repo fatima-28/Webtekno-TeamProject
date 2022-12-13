@@ -1,3 +1,5 @@
+$border-color:#50525436;
+$card-bg-color:#50525436;
 .recommended{
     width: 80%;
     margin: auto;
@@ -13,9 +15,9 @@
             flex-direction: column;
             width: 242px;
             border-radius: 20px;
-            border: 1px solid #50525436;
+            border: 1px solid $border-color;
             .img{
-                background: #50525436;
+                background: $card-bg-color;
                 width: 240px;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
