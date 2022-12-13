@@ -1,5 +1,5 @@
 import React from 'react'
-import './LeftBannerTop.scss'
+import './LeftBannerProduct.scss'
 import BannerButton from '../../../../../../components/BannerButton/BannerButton'
 const LeftBannerProduct = (props:any) => {
     return (
