@@ -33,13 +33,13 @@ const Footer = () => {
 
                 <div className="footer-contact">
                     <h1 className='footer-h1'>Əlaqə</h1>
-                    <Link to='' className='footer-links'>+994 55 690 22 96</Link>
-                    <Link to='' className='footer-links'>info@greentekno.az</Link>
+                    <Link to='' className='footer-links'>+994 55 666 22 99</Link>
+                    <Link to='' className='footer-links'>info@webtekno.az</Link>
                 </div>
 
                 <div className="footer-address">
                     <h1 className='footer-h1'>Ünvan</h1>
-                    <p className='footer-p'>19 Azadlıq Ave Bakı, Azərbaycan</p>
+                    <p className='footer-p'>Bakı, Azərbaycan</p>
                 </div>
             </div>
 
