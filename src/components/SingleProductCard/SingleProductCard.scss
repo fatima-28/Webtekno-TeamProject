@@ -64,14 +64,9 @@
       transition: 2s;
       padding-right: 15px;
       padding-bottom: 10px;
-    
-      .card-button {
-        display: none;
-      }
-    }
-    &:hover {
-      .card-button {
-        cursor: pointer;
+    .card-button{
+      border: 1px solid $theme-color;
+       cursor: pointer;
         width: 80px;
         height: 25px;
         display: flex;
@@ -79,8 +74,15 @@
         justify-content: center;
         transition: 1s ease-out;
         font-size: 12px;
-        border: none;
-        color: $black-color !important;
+        color: $theme-color;
+        background-color: $white-color;
+        border-radius: 5px;
+    }
+      
+    }
+    &:hover {
+      .card-button {
+
         &:hover {
           background-color: $theme-color !important;
           color: $white-color !important;
