@@ -1,0 +1,18 @@
+@import '../../../../../components/variables';
+
+.left-banner {
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    
+
+    .left-banner-2 {
+        width: 100%;
+        height: 49%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

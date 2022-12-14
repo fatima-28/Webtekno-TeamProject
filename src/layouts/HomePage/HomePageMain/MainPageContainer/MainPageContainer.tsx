@@ -40,6 +40,8 @@ const MainPageContainer = () => {
                   </button>
           </div>
       </section>
+
+      
   )
 }
 
