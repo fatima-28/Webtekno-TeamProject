@@ -23,7 +23,7 @@ const MainPageBanner = () => {
 
           <div className="mainpage-context-bottom">
             <h1>The future of health is on your wrist</h1>
-            <Link  to="/" className='banner-link'>{`Daha cox oyren >`} </Link>
+            <Link  to="/" className='banner-link'>{`Daha çox öyrən >`} </Link>
           </div>
 
         </div>

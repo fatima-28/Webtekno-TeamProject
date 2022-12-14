@@ -4,6 +4,7 @@ import { MainCustomerService } from "./HomePageMain/MainCustomerService/MainCust
 import MainPageBanner from "./HomePageMain/MainPageBanner/MainPageBanner";
 import MainPageBannerSecond from "./HomePageMain/MainPageBannerSecond/MainPageBannerSecond";
 import MainPageContainer from "./HomePageMain/MainPageContainer/MainPageContainer";
+import { MainRecommended } from "./HomePageMain/MainRecommended/MainRecommended";
 import MainPageGrid from "./HomePageMain/MainPageGrid/MainPageGrid";
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
       <MainBestSellers />
       <MainPageBanner />
       <MainPageContainer/>
+      <MainRecommended />
       <MainPageGrid/>
       <MainPageBannerSecond/>
     </div>
