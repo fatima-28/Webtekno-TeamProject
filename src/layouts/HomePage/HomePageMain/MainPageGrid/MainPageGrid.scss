@@ -1,0 +1,16 @@
+@import '../../../../components/variables';
+
+.grid-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+    .banners {
+        width: 88%;
+        display: flex!important;
+        justify-content: space-between;
+        height: 80vh;
+
+    }
+}
