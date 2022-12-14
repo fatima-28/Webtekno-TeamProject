@@ -1,11 +1,17 @@
 import React from 'react'
+import {FC} from 'react'
 import './LeftBannerProduct.scss'
 import BannerButton from '../../../../../../components/BannerButton/BannerButton'
-const LeftBannerProduct = (props:any) => {
+type StrictComProps = {
+    className : string,
+    img: string,
+    title: string
+}
+const LeftBannerProduct: FC<StrictComProps> = ({className, img, title}) => {
     return (
-        <div className={props.className}>
-            <img className="left-banners-img" src={props.img} alt="img" />
-            <h3 className="left-banners-h3">{props.title}</h3>
+        <div className={className}>
+            <img className="left-banners-img" src={img} alt="img" />
+            <h3 className="left-banners-h3">{title}</h3>
             <BannerButton />
         </div>
     )
