@@ -23,8 +23,8 @@ export default function Images(props) {
   return (
     <>
       {currentItems.map((image) => (
-        <div className="product-single-card1">
-          <div className="single-card-item card-item-img" key={image.id}>
+        <div className="product-single-card1" key={image.id}>
+          <div className="single-card-item card-item-img" >
             <img src={image.url} alt={image.title} className="card-image" />
           </div>
           <div className="single-card-item card-item-context">
