@@ -84,6 +84,8 @@ $greenbuttoncolor: #00a651;
         .basket {
             width: 50px;
             height: 80px;
+            border: none;
+            background-color: white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -107,6 +109,17 @@ $greenbuttoncolor: #00a651;
             .storeicon:hover {
                 cursor: pointer;
             }
+        }
+        .basket-dropdown{
+            min-width: 25rem;
+            min-height: 55vh;
+            background-color: white;
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            top: 80px;
+            border-radius: 15px;
+            border: 1px solid lightgray;
         }
 
         .login {
