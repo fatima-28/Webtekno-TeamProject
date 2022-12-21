@@ -15,7 +15,6 @@ $third-color: rgb(255, 255, 255);
     margin-bottom: 40px;
 
     img {
-
         width: 100%;
         height: 400px;
         position: absolute;
@@ -25,14 +24,18 @@ $third-color: rgb(255, 255, 255);
 
 
     .total-div {
+        width: 100%;
         height: 65%;
         display: flex;
-
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         color: $third-color;
         font-size: 25px;
+
+        .mainPageBannerHeaderText{
+            
+        }
 
         .product-link {
 

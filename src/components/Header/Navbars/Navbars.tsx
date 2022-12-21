@@ -1,8 +1,9 @@
-import React from 'react'
 import './Navbars.scss'
+import '../../../reposonsivity/HeaderIphoneSe/HeaderIphoneSe.scss'
+//? Images
+import projectlogo from '../../../images/projectlogo.png'
 
 import { SlBasket } from 'react-icons/sl'
-import { FiUserPlus } from 'react-icons/fi'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiMagnifyingGlass } from 'react-icons/hi2'
 import { FiPhoneCall } from 'react-icons/fi'
@@ -10,21 +11,28 @@ import { ImHeadphones } from 'react-icons/im'
 import { BsPhone } from 'react-icons/bs'
 import { MdOutlineComputer } from 'react-icons/md'
 import { BsSmartwatch } from 'react-icons/bs'
+import { ImWhatsapp } from 'react-icons/im'
+import { BsTelephone } from 'react-icons/bs'
+import { GrClose } from 'react-icons/gr'
+
 
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-//? Images
-import projectlogo from '../../../images/projectlogo.png'
+import React from 'react'
+import { Login } from '../../Login/Login'
 
 const Navbars = () => {
-    const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false);
+  const [close, setClose] = useState(false)
 
-    const handleClick = () => {
-      setActive(!active);
-    };
+  const closePopup = () => {
+    setClose(!close);
+  };
 
-    // function 
-  
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
     <>
       <nav className='navbartop'>
@@ -40,7 +48,7 @@ const Navbars = () => {
         </div>
         <div className="navbar-icons">
           <div className="hamburger-menu">
-          <GiHamburgerMenu size={38} color='#001'/>
+            <GiHamburgerMenu size={38} color='#001' />
           </div>
 
 
@@ -49,13 +57,9 @@ const Navbars = () => {
             <div className="countsquare">0</div>
           </div>
 
-
-          <div className="login">
-            <button>
-              <FiUserPlus className='usericon' size={30} />
-            </button>
+          <div className="login-part">
+            <Login />
           </div>
-
 
           <div className="logout"><button className="logout-link">Log Out</button></div>
 
@@ -65,10 +69,12 @@ const Navbars = () => {
       <nav className='navbarbottom'>
         <div className="categories">
           <button type='button' className='showcatogories-button' onClick={handleClick} >
-            <GiHamburgerMenu color='white' size={28} />
+            <div className="hamburgerMenuIconInButton">
+              <GiHamburgerMenu color='white' size={28} />
+            </div>
             <p className='showcatogories'>Kateqoriyaları Göstər</p>
           </button>
-          <div  className={!active ? "passive selections" : "selections"} style={{ display: active ? "flex" : "none" }}>
+          <div className={!active ? "passive selections" : "selections"} style={{ display: active ? "flex" : "none" }}>
             <ul>
 
               <li><Link className='selection-link selection-link1' to=''>
@@ -109,10 +115,27 @@ const Navbars = () => {
           </div>
         </div>
         <div className="contact">
-          <button className="contactbutton">
+          <button className='contactbutton' onClick={closePopup}>
             <FiPhoneCall className='fiphonecall' size={26} />
             <p className='contactword'>Əlaqə</p>
           </button>
+
+          <div className={!close ? "popup" : "popup showpopup"} style={{ visibility: close ? "visible" : "hidden" }}>
+            <div className="inner">
+              <div className="top-inner">
+                <button className='closeButtonInInner' onClick={closePopup}><GrClose color='black' size={20} className='closeButtonIconInInner' /></button>
+              </div>
+              <h1 className='popup-header-text'>Əlaqə</h1>
+              <button className="contactWithUs">
+                <ImWhatsapp color='white' size={20} />
+                <h4 className='contactWithUsText'>Whatsapp</h4>
+              </button>
+              <button className="callUs">
+                <BsTelephone />
+                <h4 className='callUsText'>Bizə zəng et</h4>
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </>

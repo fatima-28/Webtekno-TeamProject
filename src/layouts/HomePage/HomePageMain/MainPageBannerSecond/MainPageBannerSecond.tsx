@@ -8,7 +8,7 @@ const MainPageBannerSecond = () => {
             <div className="mainpage-banner2">
                 <img src={backtoschool} alt="mektebe donus" />
                 <div className="total-div">
-                    <h1>Məktəbə dönüş</h1>
+                    <h1 className='mainPageBannerHeaderText'>Məktəbə dönüş</h1>
                     <p>Apple məhsulları ilə daha səmərəli çalışın</p>
                     <Link className="product-link" to="/products" >Məhsullara bax</Link>
                 </div>
