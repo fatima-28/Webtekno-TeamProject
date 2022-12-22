@@ -2,7 +2,7 @@ $primary-color: #000;
 $button-color: #00a651;
 $third-color: #fff;
 $cream-color: #ebebeb;
-.basket{
+.basket-section{
     width: 80%;
     margin: auto;
     padding: 60px 0;
@@ -12,13 +12,59 @@ $cream-color: #ebebeb;
     }
 }
 .basket-main{
-    width: 80%;
+
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     &__left{
         display: block;
 
+    }
+    &__right{
+        border-radius: 10px;
+        border: 1px solid #a3a3a3;
+        padding: 20px 10px;
+        height: fit-content;
+        width: 30%;
+        .complete-order{
+            .discount , .shipping , .total-price{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h4{
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                h3{
+                    font-size: 24px;
+                    font-weight: 600;
+
+                }
+                span{
+                    color: #00a651;
+                }
+            }
+            .total-price{
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+            
+            .order-btn{
+                width: 100%;
+                padding: 6px 0;
+                background: #00a651;
+                border: 1px solid #00a651;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+
+
+            }
+           
+        }
     }
    
 }

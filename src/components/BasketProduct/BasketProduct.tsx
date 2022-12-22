@@ -28,7 +28,7 @@ const BasketProduct: FC<totalProps> = ({
       <div className="product-count">
         <button className="minus">-</button>
         <div className="input-count">
-          <span>3</span>
+          <span>2</span>
         </div>
         <button className="plus">+</button>
       </div>
