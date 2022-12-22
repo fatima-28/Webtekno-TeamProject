@@ -1,450 +1,477 @@
  @import '../../variables';
-$greenbuttoncolor: #00a651;
-$text-color:#fff;
+ $greenbuttoncolor: #00a651;
+ $text-color: #fff;
 
-.navbartop {
-    width: 100%;
-    display: flex;
+ .navbartop {
+     width: 100%;
+     display: flex;
 
-    .logo-container {
-        width: 32%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+     .logo-container {
+         width: 32%;
+         height: 80px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
 
-        img {
-            width: 130px;
-            height: 60px;
-        }
-    }
+         img {
+             width: 130px;
+             height: 60px;
+         }
+     }
 
-    .navbar-links {
-        width: 32%;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+     .navbar-links {
+         width: 32%;
+         height: 80px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
 
-        ul {
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+         ul {
+             width: 80%;
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
 
-            li {
-                .links {
-                    color: black;
-                    font-size: 18px;
-                    font-weight: 500;
-                    transition: .6s;
-                    text-decoration: none;
-                    position: relative;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                }
+             li {
+                 .links {
+                     color: black;
+                     font-size: 18px;
+                     font-weight: 500;
+                     transition: .6s;
+                     text-decoration: none;
+                     position: relative;
+                     text-align: center;
+                     display: flex;
+                     justify-content: center;
+                     align-items: flex-end;
+                 }
 
-                .links::after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    transform: scaleX(0);
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color: black;
-                    transform-origin: bottom right;
-                    transition: transform .6s ease-out;
-                }
+                 .links::after {
+                     content: '';
+                     position: absolute;
+                     width: 100%;
+                     transform: scaleX(0);
+                     height: 2px;
+                     bottom: 0;
+                     left: 0;
+                     background-color: black;
+                     transform-origin: bottom right;
+                     transition: transform .6s ease-out;
+                 }
 
-                .links:hover::after {
-                    transform: scaleX(1);
-                    transform-origin: bottom left;
-                }
-            }
-        }
-    }
+                 .links:hover::after {
+                     transform: scaleX(1);
+                     transform-origin: bottom left;
+                 }
+             }
+         }
+     }
 
-    .navbar-icons {
-        width: 36%;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+     .navbar-icons {
+         width: 36%;
+         height: 80px;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
 
-        .hamburger-menu {
-            width: 15%;
-            height: 80px;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
+         .hamburger-menu {
+             width: 15%;
+             height: 80px;
+             display: none;
+             align-items: center;
+             justify-content: center;
+         }
 
-        .basket {
-            width: 50px;
-            height: 80px;
-            border: none;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+         .basket {
+             width: 50px;
+             height: 80px;
+             border: none;
+             background-color: white;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             position: relative;
 
-            .countsquare {
-                width: 18px;
-                height: 18px;
-                border-radius: 50%;
-                position: absolute;
-                top: 20px;
-                right: 0;
-                background-color: red;
-                color: white;
-                font-size: 12px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+             .countsquare {
+                 width: 18px;
+                 height: 18px;
+                 border-radius: 50%;
+                 position: absolute;
+                 top: 20px;
+                 right: 0;
+                 background-color: red;
+                 color: white;
+                 font-size: 12px;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+             }
 
-            .storeicon:hover {
-                cursor: pointer;
-            }
-        }
-        .basket-dropdown{
-           padding: 10px 0 20px 0;
-            min-width: 25rem;
-            min-height: 55vh;
-            background-color: white;
-            position: absolute;
-            z-index: 10;
-            right: 0;
-            top: 80px;
-            border-radius: 15px;
-            border: 1px solid lightgray;
-            .basket-price{
-                padding: 10px 30px;
-               font-size: 24px;
-                font-weight: 600;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                span{
-                    color: $greenbuttoncolor;
-                }
-            }
-            .btn-link-basket{
-                text-align: center;
-                text-decoration: none;
-                border-radius: 2px;
-                background: $greenbuttoncolor;
-                padding: 5px 125px;
-                color: $text-color;
-                font-size: 16px;
-                font-weight: 500;
-                width: 100%;
+             .storeicon:hover {
+                 cursor: pointer;
+             }
+         }
 
-            }
-        }
+         .basket-dropdown {
+             padding: 10px 0 20px 0;
+             min-width: 25rem;
+             min-height: 55vh;
+             background-color: white;
+             position: absolute;
+             z-index: 10;
+             right: 0;
+             top: 80px;
+             border-radius: 15px;
+             border: 1px solid lightgray;
 
-        .logout {
-            width: 20%;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+             .basket-price {
+                 padding: 10px 30px;
+                 font-size: 24px;
+                 font-weight: 600;
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-between;
 
-            .logout-link {
-                display: none;
-                width: 100px;
-                height: 40px;
-                border-radius: 20px;
-                border: solid 1px black;
-                align-items: center;
-                justify-content: center;
-            }
+                 span {
+                     color: $greenbuttoncolor;
+                 }
+             }
 
-            button:hover {
-                cursor: pointer;
-            }
-        }
-    }
-}
+             .btn-link-basket {
+                 text-align: center;
+                 text-decoration: none;
+                 border-radius: 2px;
+                 background: $greenbuttoncolor;
+                 padding: 5px 125px;
+                 color: $text-color;
+                 font-size: 16px;
+                 font-weight: 500;
+                 width: 100%;
 
-.navbarbottom {
-    width: 100%;
-    display: flex;
-    background-color: #000;
+             }
+         }
 
-    .categories {
-        display: flex;
-        width: 30%;
-        height: 80px;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding-left: 100px;
+         .logout {
+             width: 20%;
+             height: 80px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
 
-        .showcatogories-button {
-            width: 250px;
-            height: 50px;
-            border: solid 1px #000;
-            border-radius: 25px;
-            background-color: $greenbuttoncolor;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            position: absolute;
-            cursor: pointer;
+             .logout-link {
+                 display: none;
+                 width: 100px;
+                 height: 40px;
+                 border-radius: 20px;
+                 border: solid 1px black;
+                 align-items: center;
+                 justify-content: center;
+             }
 
-            .showcatogories {
-                color: white;
-                font-size: 16px;
-            }
-        }
+             button:hover {
+                 cursor: pointer;
+             }
+         }
 
-        .selections {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            border-radius: 15px;
-            border: solid 1px black;
-            background-color: white;
-            position: absolute;
-            min-width: 400px;
-            height: 300px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            top: 75px;
-            z-index: 1;
+         .login {
+             width: 20%;
+             height: 80px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
 
-            .selection-link {
-                width: 100%;
-                height: 75px;
-                display: flex;
-                text-decoration: none;
-                color: black;
-                font-size: 20px;
+             button {
+                 width: 40px;
+                 height: 40px;
+                 border: none;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 background-color: transparent;
+                 transition: .6s;
+             }
 
-                .icon-part {
-                    width: 15%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
+             button:hover {
+                 cursor: pointer;
+             }
+         }
+     }
+ }
 
-                .text-part {
-                    width: 85%;
-                    display: flex;
-                    align-items: center;
-                    padding-left: 20px;
-                }
-            }
+ .navbarbottom {
+     width: 100%;
+     display: flex;
+     background-color: #000;
 
-            .selection-link1 {
-                border-radius: 15px 15px 0 0;
-            }
+     .categories {
+         display: flex;
+         width: 30%;
+         height: 80px;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         padding-left: 100px;
 
-            .selection-link2 {
-                border-radius: 0 0 15px 15px;
-            }
+         .showcatogories-button {
+             width: 250px;
+             height: 50px;
+             border: solid 1px #000;
+             border-radius: 25px;
+             background-color: $greenbuttoncolor;
+             border: none;
+             display: flex;
+             align-items: center;
+             justify-content: space-evenly;
+             position: absolute;
+             cursor: pointer;
 
-            .selection-link:hover {
-                background-color: $greenbuttoncolor;
-                color: white;
+             .showcatogories {
+                 color: white;
+                 font-size: 16px;
+             }
+         }
 
-                .icon {
-                    color: white;
-                }
-            }
-        }
+         .selections {
+             display: none;
+             flex-direction: column;
+             justify-content: center;
+             border-radius: 15px;
+             border: solid 1px black;
+             background-color: white;
+             position: absolute;
+             min-width: 400px;
+             height: 300px;
+             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+             top: 75px;
+             z-index: 1;
 
-        .passive {
-            display: none;
-        }
-    }
+             .selection-link {
+                 width: 100%;
+                 height: 75px;
+                 display: flex;
+                 text-decoration: none;
+                 color: black;
+                 font-size: 20px;
 
-    .search {
-        width: 40%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+                 .icon-part {
+                     width: 15%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                 }
 
-        .find-space {
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 35px;
-            border: solid 1px #000;
+                 .text-part {
+                     width: 85%;
+                     display: flex;
+                     align-items: center;
+                     padding-left: 20px;
+                 }
+             }
 
-            input {
-                width: 85%;
-                height: 60px;
-                display: flex;
-                align-items: center;
-                padding-left: 20px;
-                border-radius: 30px 0 0 30px;
-                border: none;
-                font-size: 18px;
-                outline: none;
-            }
+             .selection-link1 {
+                 border-radius: 15px 15px 0 0;
+             }
 
-            button {
-                width: 15%;
-                height: 60px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: none;
-                border-radius: 0 30px 30px 0;
-                background-color: transparent;
-                background-color: white;
-                cursor: pointer;
-            }
-        }
-    }
+             .selection-link2 {
+                 border-radius: 0 0 15px 15px;
+             }
 
-    .contact {
-        width: 30%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+             .selection-link:hover {
+                 background-color: $greenbuttoncolor;
+                 color: white;
 
-        .contactbutton {
-            width: 200px;
-            height: 60px;
-            border: solid 1px $greenbuttoncolor;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            background-color: white;
-            transition: .6s;
-            cursor: pointer;
+                 .icon {
+                     color: white;
+                 }
+             }
+         }
 
-            .fiphonecall {
-                color: $greenbuttoncolor;
-            }
+         .passive {
+             display: none;
+         }
+     }
 
-            p {
-                font-size: 18px;
-                color: $greenbuttoncolor;
-            }
+     .search {
+         width: 40%;
+         height: 80px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
 
-            &:hover {
-                background-color: $greenbuttoncolor;
-                border: white;
+         .find-space {
+             width: 80%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border-radius: 35px;
+             border: solid 1px #000;
 
-                .fiphonecall {
-                    color: white;
-                }
+             input {
+                 width: 85%;
+                 height: 60px;
+                 display: flex;
+                 align-items: center;
+                 padding-left: 20px;
+                 border-radius: 30px 0 0 30px;
+                 border: none;
+                 font-size: 18px;
+                 outline: none;
+             }
 
-                .contactword {
-                    color: white;
-                }
-            }
-        }
+             button {
+                 width: 15%;
+                 height: 60px;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 border: none;
+                 border-radius: 0 30px 30px 0;
+                 background-color: transparent;
+                 background-color: white;
+                 cursor: pointer;
+             }
+         }
+     }
 
-        .popup {
-            width: 100%;
-            height: 100%;
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, .5);
-            z-index: 10;
-            opacity: 0;
+     .contact {
+         width: 30%;
+         height: 80px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
 
-            .inner {
-                width: 460px;
-                height: 270px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: $white;
-                border-radius: 20px;
-                visibility: visible;
-                opacity: 1;
+         .contactbutton {
+             width: 200px;
+             height: 60px;
+             border: solid 1px $greenbuttoncolor;
+             border-radius: 30px;
+             display: flex;
+             align-items: center;
+             justify-content: space-evenly;
+             background-color: white;
+             transition: .6s;
+             cursor: pointer;
 
-                .top-inner {
-                    width: 100%;
-                    height: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
+             .fiphonecall {
+                 color: $greenbuttoncolor;
+             }
 
-                    .closeButtonInInner {
-                        width: 20px;
-                        height: 20px;
-                        background-color: $white;
-                        border-radius: 50%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-right: 20px;
-                        cursor: pointer;
-                        border: none;
-                    }
-                }
+             p {
+                 font-size: 18px;
+                 color: $greenbuttoncolor;
+             }
 
-                .popup-header-text {
-                    font-size: 40px;
-                    color: $header-text-color;
-                }
+             &:hover {
+                 background-color: $greenbuttoncolor;
+                 border: white;
 
-                .contactWithUs {
-                    width: 160px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    background-color: $greenbuttoncolor;
-                    border-radius: 25px;
-                    border: none;
-                    cursor: pointer;
+                 .fiphonecall {
+                     color: white;
+                 }
 
-                    .contactWithUsText {
-                        color: $white;
-                        font-size: 15px;
-                        font-weight: 500;
-                    }
+                 .contactword {
+                     color: white;
+                 }
+             }
+         }
 
-                }
+         .popup {
+             width: 100%;
+             height: 100%;
+             display: none;
+             position: fixed;
+             top: 0;
+             left: 0;
+             background: rgba(0, 0, 0, .5);
+             z-index: 10;
+             opacity: 0;
 
-                .callUs {
-                    min-width: 160px;
-                    width: 160px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    background-color: $white;
-                    border-radius: 25px;
-                    border: none;
-                    box-shadow: 0 0 15px -4px $border-color;
-                    cursor: pointer;
+             .inner {
+                 width: 460px;
+                 height: 270px;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-evenly;
+                 align-items: center;
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 background-color: $white;
+                 border-radius: 20px;
+                 visibility: visible;
+                 opacity: 1;
 
-                    .callUsText {
-                        color: $greenbuttoncolor;
-                        font-size: 15px;
-                        font-weight: 500;
-                    }
-                }
-            }
-        }
+                 .top-inner {
+                     width: 100%;
+                     height: 20px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: flex-end;
 
-        .showpopup {
-            opacity: 1;
-            display: block;
-        }
-    }
-}
+                     .closeButtonInInner {
+                         width: 20px;
+                         height: 20px;
+                         background-color: $white;
+                         border-radius: 50%;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         margin-right: 20px;
+                         cursor: pointer;
+                         border: none;
+                     }
+                 }
+
+                 .popup-header-text {
+                     font-size: 40px;
+                     color: $header-text-color;
+                 }
+
+                 .contactWithUs {
+                     width: 160px;
+                     height: 50px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+                     background-color: $greenbuttoncolor;
+                     border-radius: 25px;
+                     border: none;
+                     cursor: pointer;
+
+                     .contactWithUsText {
+                         color: $white;
+                         font-size: 15px;
+                         font-weight: 500;
+                     }
+
+                 }
+
+                 .callUs {
+                     min-width: 160px;
+                     width: 160px;
+                     height: 50px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+                     background-color: $white;
+                     border-radius: 25px;
+                     border: none;
+                     box-shadow: 0 0 15px -4px $border-color;
+                     cursor: pointer;
+
+                     .callUsText {
+                         color: $greenbuttoncolor;
+                         font-size: 15px;
+                         font-weight: 500;
+                     }
+                 }
+             }
+         }
+
+         .showpopup {
+             opacity: 1;
+             display: block;
+         }
+     }
+ }
