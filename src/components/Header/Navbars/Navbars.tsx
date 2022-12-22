@@ -18,6 +18,7 @@ import { useState } from "react";
 import projectlogo from "../../../images/projectlogo.png";
 import BasketDropdownProduct from "../../BasketDropdownProduct/BasketDropdownProduct";
 import { GrClose } from "react-icons/gr";
+import { Login } from "../../Login/Login";
 
 const Navbars = () => {
   const [active, setActive] = useState(false);
@@ -106,11 +107,12 @@ const Navbars = () => {
             </div>
           </button>
 
-          <div className="login">
+          {/* <div className="login">
             <button>
               <FiUserPlus className="usericon" size={30} />
             </button>
-          </div>
+          </div> */}
+          <Login/>
 
           <div className="logout">
             <button className="logout-link">Log Out</button>

@@ -13,13 +13,18 @@ export const Login = () => {
 
     function showLoginFunction() {
         setShowLogin(!showLogin)
+        console.log("true");
+        
     }
-
-    //! Forgot password
 
     function showSignUpFunction() {
         setShowSignUp(!showSignUp)
     }
+
+    console.log(showLogin);
+
+    showLogin ? console.log("true") : console.log("false");
+
     return (
         <div className="login">
             <button className='loginButton' onClick={showLoginFunction}><FiUserPlus className='usericon' size={30} /></button>
