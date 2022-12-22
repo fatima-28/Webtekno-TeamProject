@@ -1,0 +1,16 @@
+@media only screen and (max-width:376px){
+    .left-banner{
+        width: 100%;
+        gap: 20px;
+        
+        .left-banner-1{
+            height: 350px;
+        }
+        .left-banner-2{
+            
+            display: flex;
+            flex-direction: column;
+            height: 720px;
+        }
+    }
+}

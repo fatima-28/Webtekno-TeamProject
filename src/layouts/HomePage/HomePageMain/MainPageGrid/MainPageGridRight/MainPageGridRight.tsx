@@ -1,6 +1,7 @@
 import React from 'react'
 import GridImg4 from '../../../../../images/iphone12promax-banner.png'
 import './MainPageGridRight.scss'
+import '../../../../../responsibilty/MainPageGridRightIphoneSe.scss'
 import BannerButton from '../../../../../components/BannerButton/BannerButton'
 const MainPageGridRight = () => {
     return (

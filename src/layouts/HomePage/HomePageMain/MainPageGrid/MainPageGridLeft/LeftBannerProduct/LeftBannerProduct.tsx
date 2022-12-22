@@ -1,6 +1,7 @@
 import React from 'react'
 import {FC} from 'react'
 import './LeftBannerProduct.scss'
+import '../../../../../../responsibilty/LeftBannerProductIphoneSe.scss'
 import BannerButton from '../../../../../../components/BannerButton/BannerButton'
 type StrictComProps = {
     className : string,
