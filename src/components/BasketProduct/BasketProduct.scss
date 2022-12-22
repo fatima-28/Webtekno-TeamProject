@@ -7,22 +7,51 @@ $cream-color: #ebebeb;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid $cream-color;
+    border-bottom: 1px solid #a3a3a3;
+    min-width: 700px;
     .product-img{
-        width: 80px;
+        width: 80px !important;
+        height: 80px !important;
+        object-fit: cover;
         img{
-            width: 100%;
+            width: 100% !important;
+         
+            object-fit: cover;
         }
     }
     .product-name{
         h3{
-            margin-top: 30px;
+            margin-top: 10px;
+            width: 300px;
             font-size: 24px;
+            font-weight: 400;
         }
     }
     .product-count{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border: 1px solid #a3a3a3;
+        border-radius: 5px;
+        margin-right: 30px;
+        button{
+            font-size: 18px;
+            background: none;
+            font-weight: 400;
+            border: none;
+            cursor: pointer;
+            padding: 1px 6px;
+        }
+        .input-count{
+            width: 70px;
+            text-align: center;
+        }
+    }
+    .product-price{
+        h3{
+            font-size: 24px;
+            font-weight: 600;
+            color: #00a651;
+        }
     }
 }
