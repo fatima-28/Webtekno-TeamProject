@@ -1,0 +1,28 @@
+$primary-color: #000;
+$button-color: #00a651;
+$third-color: #fff;
+$cream-color: #ebebeb;
+.basket-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid $cream-color;
+    .product-img{
+        width: 80px;
+        img{
+            width: 100%;
+        }
+    }
+    .product-name{
+        h3{
+            margin-top: 30px;
+            font-size: 24px;
+        }
+    }
+    .product-count{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

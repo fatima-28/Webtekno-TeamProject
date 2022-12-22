@@ -1,4 +1,5 @@
 $greenbuttoncolor: #00a651;
+$text-color:#fff;
 
 .navbartop {
     width: 100%;
@@ -84,6 +85,8 @@ $greenbuttoncolor: #00a651;
         .basket {
             width: 50px;
             height: 80px;
+            border: none;
+            background-color: white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -106,6 +109,41 @@ $greenbuttoncolor: #00a651;
 
             .storeicon:hover {
                 cursor: pointer;
+            }
+        }
+        .basket-dropdown{
+           padding: 10px 0 20px 0;
+            min-width: 25rem;
+            min-height: 55vh;
+            background-color: white;
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            top: 80px;
+            border-radius: 15px;
+            border: 1px solid lightgray;
+            .basket-price{
+                padding: 10px 30px;
+               font-size: 24px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span{
+                    color: $greenbuttoncolor;
+                }
+            }
+            .btn-link-basket{
+                text-align: center;
+                text-decoration: none;
+                border-radius: 2px;
+                background: $greenbuttoncolor;
+                padding: 5px 125px;
+                color: $text-color;
+                font-size: 16px;
+                font-weight: 500;
+                width: 100%;
+
             }
         }
 
