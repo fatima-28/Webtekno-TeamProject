@@ -7,8 +7,8 @@ import { FiUserPlus } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { FiPhoneCall } from "react-icons/fi";
-import { ImHeadphones } from "react-icons/im";
-import { BsPhone } from "react-icons/bs";
+import { ImHeadphones, ImWhatsapp } from "react-icons/im";
+import { BsPhone, BsTelephone } from "react-icons/bs";
 import { MdOutlineComputer } from "react-icons/md";
 import { BsSmartwatch } from "react-icons/bs";
 
@@ -17,9 +17,15 @@ import { useState } from "react";
 //? Images
 import projectlogo from "../../../images/projectlogo.png";
 import BasketDropdownProduct from "../../BasketDropdownProduct/BasketDropdownProduct";
+import { GrClose } from "react-icons/gr";
 
 const Navbars = () => {
   const [active, setActive] = useState(false);
+
+  const [close, setClose] = useState(false);
+  const closePopup = () => {
+    setClose(!close);
+  };
 
   const handleClick = () => {
     setActive(!active);
@@ -90,10 +96,12 @@ const Navbars = () => {
                 />
               </div>
 
-              <div className="basket-price">Toplam : <span>5500 ₼</span></div>
+              <div className="basket-price">
+                Toplam : <span>5500 ₼</span>
+              </div>
               <Link className="btn-link-basket" to="/basket">
                 {" "}
-               Səbətə get
+                Səbətə get
               </Link>
             </div>
           </button>
@@ -180,6 +188,32 @@ const Navbars = () => {
             <FiPhoneCall className="fiphonecall" size={26} />
             <p className="contactword">Əlaqə</p>
           </button>
+
+          <div
+            className={!close ? "popup" : "popup showpopup"}
+            style={{ visibility: close ? "visible" : "hidden" }}
+          >
+            <div className="inner">
+              <div className="top-inner">
+                <button className="closeButtonInInner" onClick={closePopup}>
+                  <GrClose
+                    color="black"
+                    size={20}
+                    className="closeButtonIconInInner"
+                  />
+                </button>
+              </div>
+              <h1 className="popup-header-text">Əlaqə</h1>
+              <button className="contactWithUs">
+                <ImWhatsapp color="white" size={20} />
+                <h4 className="contactWithUsText">Whatsapp</h4>
+              </button>
+              <button className="callUs">
+                <BsTelephone />
+                <h4 className="callUsText">Bizə zəng et</h4>
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </>

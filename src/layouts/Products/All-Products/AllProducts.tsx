@@ -8,7 +8,7 @@ const AllProducts = () => {
     // let products = document.querySelector(".main-products")
     const [images, setImages] = useState([]);
     //fixed
-    const link="http://localhost:3000/cards";
+    const link = "http://localhost:3000/cards";
     useEffect(() => {
         fetch(link).then(
             response => response.json().then(data => {
@@ -18,13 +18,11 @@ const AllProducts = () => {
         //fix:  Use props
     }, [])
     return (
-        <section className='all-products'>   
+        <section className='all-products'>
             <div className="main-products  ">
                 <Images data={images} />
-        
-               
             </div>
-           
+
         </section>
     )
 }

@@ -1,4 +1,5 @@
 import './Footer.scss'
+import '../../reposonsivity/FooterIphoneSe/FooterIphoneSe.scss'
 import React from 'react'
 import { Link } from 'react-router-dom'
 //! Icons
@@ -19,13 +20,13 @@ const Footer = () => {
                 <div className="footer-follow-us">
                     <h1 className='footer-h1'>Bizi izləyin</h1>
                     <div className="footer-logos">
-                        
-                        <Link to=''>
-                        <BsInstagram size={21} color='white' />
+
+                        <Link to='' className='linkFooter'>
+                            <BsInstagram size={21} color='white' />
                         </Link>
 
-                        <Link to=''>
-                        <CiFacebook size={26} color='white'/>
+                        <Link to='' className='linkFooter'>
+                            <CiFacebook size={26} color='white' />
                         </Link>
 
                     </div>
@@ -33,7 +34,7 @@ const Footer = () => {
 
                 <div className="footer-contact">
                     <h1 className='footer-h1'>Əlaqə</h1>
-                    <Link to='' className='footer-links'>+994 55 666 22 99</Link>
+                    <Link to='' className='footer-links'>+994 55 690 22 96</Link>
                     <Link to='' className='footer-links'>info@webtekno.az</Link>
                 </div>
 

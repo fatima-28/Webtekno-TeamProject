@@ -20,7 +20,7 @@
     "react-crud-icons": "^1.2.1",
     "react-dom": "^18.2.0",
     "react-dropdown-select": "^4.9.0",
-    "react-icons": "^4.6.0",
+    "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
     "react-paginate": "^8.1.4",
     "react-responsive-carousel": "^3.2.23",
@@ -34,7 +34,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint-fix": "tsc --noEmit && eslint src/**/*.ts{,x} --fix"
   },
   "eslintConfig": {
     "extends": [

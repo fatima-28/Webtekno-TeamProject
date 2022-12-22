@@ -1,0 +1,90 @@
+@media only screen and (max-width: 376px) {
+    footer {
+        .footer-top {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 250px;
+
+            .footer-logo-container {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 0;
+            }
+
+            .footer-follow-us {
+                width: 33%;
+                height: 100px;
+                padding-top: 0;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .footer-h1 {
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .footer-logos {
+                    width: fit-content;
+                    height: fit-content;
+                    gap: 4px;
+                }
+            }
+
+            .footer-contact {
+                width: 33%;
+                height: 100px;
+                padding-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                border-left: solid 1px white;
+                border-right: solid 1px white;
+                
+                .footer-links{
+                    font-size: 12px;
+                }
+            }
+
+            .footer-address {
+                width: 33%;
+                height: 100px;
+                padding-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                .footer-p {
+                    font-size: 13px;
+                    width: fit-content;
+                }
+            }
+        }
+        .footer-bottom {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            p {
+                color: white;
+                font-size: 13px;
+                text-align: center;
+    
+                span {
+                    color: green;
+                }
+            }
+        }
+    }
+}

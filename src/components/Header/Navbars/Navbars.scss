@@ -1,3 +1,4 @@
+ @import '../../variables';
 $greenbuttoncolor: #00a651;
 $text-color:#fff;
 
@@ -71,7 +72,7 @@ $text-color:#fff;
         height: 80px;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: flex-end;
 
         .hamburger-menu {
             width: 15%;
@@ -79,7 +80,6 @@ $text-color:#fff;
             display: none;
             align-items: center;
             justify-content: center;
-
         }
 
         .basket {
@@ -147,29 +147,6 @@ $text-color:#fff;
             }
         }
 
-        .login {
-            width: 20%;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            button {
-                width: 40px;
-                height: 40px;
-                border: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: transparent;
-                transition: .6s;
-            }
-
-            button:hover {
-                cursor: pointer;
-            }
-        }
-
         .logout {
             width: 20%;
             height: 80px;
@@ -219,15 +196,12 @@ $text-color:#fff;
             align-items: center;
             justify-content: space-evenly;
             position: absolute;
+            cursor: pointer;
 
             .showcatogories {
                 color: white;
                 font-size: 16px;
             }
-        }
-
-        button:hover {
-            cursor: pointer;
         }
 
         .selections {
@@ -327,9 +301,6 @@ $text-color:#fff;
                 border-radius: 0 30px 30px 0;
                 background-color: transparent;
                 background-color: white;
-            }
-
-            button:hover {
                 cursor: pointer;
             }
         }
@@ -352,6 +323,7 @@ $text-color:#fff;
             justify-content: space-evenly;
             background-color: white;
             transition: .6s;
+            cursor: pointer;
 
             .fiphonecall {
                 color: $greenbuttoncolor;
@@ -361,20 +333,118 @@ $text-color:#fff;
                 font-size: 18px;
                 color: $greenbuttoncolor;
             }
+
+            &:hover {
+                background-color: $greenbuttoncolor;
+                border: white;
+
+                .fiphonecall {
+                    color: white;
+                }
+
+                .contactword {
+                    color: white;
+                }
+            }
         }
 
-        button:hover {
-            cursor: pointer;
-            background-color: $greenbuttoncolor;
-            border: white;
+        .popup {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .5);
+            z-index: 10;
+            opacity: 0;
 
-            .fiphonecall {
-                color: white;
-            }
+            .inner {
+                width: 460px;
+                height: 270px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $white;
+                border-radius: 20px;
+                visibility: visible;
+                opacity: 1;
 
-            .contactword {
-                color: white;
+                .top-inner {
+                    width: 100%;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .closeButtonInInner {
+                        width: 20px;
+                        height: 20px;
+                        background-color: $white;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        border: none;
+                    }
+                }
+
+                .popup-header-text {
+                    font-size: 40px;
+                    color: $header-text-color;
+                }
+
+                .contactWithUs {
+                    width: 160px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    background-color: $greenbuttoncolor;
+                    border-radius: 25px;
+                    border: none;
+                    cursor: pointer;
+
+                    .contactWithUsText {
+                        color: $white;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+
+                }
+
+                .callUs {
+                    min-width: 160px;
+                    width: 160px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    background-color: $white;
+                    border-radius: 25px;
+                    border: none;
+                    box-shadow: 0 0 15px -4px $border-color;
+                    cursor: pointer;
+
+                    .callUsText {
+                        color: $greenbuttoncolor;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
             }
+        }
+
+        .showpopup {
+            opacity: 1;
+            display: block;
         }
     }
 }

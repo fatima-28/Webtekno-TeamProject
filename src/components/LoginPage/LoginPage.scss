@@ -1,0 +1,98 @@
+@import '../variables';
+
+.innerLoginPopupPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    .loginPopuptext {
+        font-size: 35px;
+        font-weight: 600px;
+        align-items: center;
+    }
+
+    .textBox {
+        width: 260px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        #emailOrPhone {
+            width: 250px;
+            height: 35px;
+            border: solid 1px #000;
+            padding: 0 10px;
+            font-size: 15px;
+        }
+    }
+
+    .password {
+        width: 260px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .totalPasswordPlace {
+            width: 250px;
+            height: 37px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: solid 1px #000;
+
+            &:has(> #password:focus) {
+                outline: auto;
+            }
+
+            #password {
+                width: 215px;
+                height: 35px;
+                padding: 0 10px;
+                font-size: 15px;
+                border: none;
+                outline: none;
+            }
+
+            .showHidePassword {
+                width: 35px;
+                height: 35px;
+                border: none;
+                background-color: $white;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .forgotPasswordButton {
+            width: fit-content;
+            font-size: 13px;
+            color: blue;
+            background-color: $white;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    .submitButton {
+        width: 250px;
+        height: 35px;
+        border: none;
+        border-radius: 1px;
+        background-color: $greenbuttoncolor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import { FC } from "react";
-import { Link } from "react-router-dom";
 import {RiDeleteBinLine} from "react-icons/ri"
 import "./BasketDropdownProduct.scss"
 type totalProps = {
