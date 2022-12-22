@@ -55,6 +55,7 @@ const Navbars = () => {
   const handleClick = () => {
     setActive(!active);
   };
+
   const [showDropdown, setShowDropdown] = useState(false);
   function showBasketDropdown() {
     setShowDropdown(!showDropdown);
@@ -82,14 +83,6 @@ const Navbars = () => {
           <div className="basket">
             <SlBasket className='storeicon' size={38} />
             <div className="countsquare">0</div>
-            {/* </div>
-
-          <div className="login-part">
-            <Login />
-          </div>
-
-          <div className="logout"><button className="logout-link">Log Out</button></div> */}
-
             <div
               className="basket-dropdown"
               style={{ display: showDropdown ? "block" : "none" }}
@@ -118,7 +111,7 @@ const Navbars = () => {
               <div className="basket-price">Toplam : <span>5500 ₼</span></div>
               <Link className="btn-link-basket" to="/basket">
                 {" "}
-                Səbətə get
+               Səbətə get
               </Link>
             </div>
           </button>
@@ -132,20 +125,11 @@ const Navbars = () => {
           <div className="logout">
             <button className="logout-link">Log Out</button>
           </div>
-          {/*//!deyisdir*/}
-
         </div>
       </nav>
 
       <nav className='navbarbottom'>
         <div className="categories">
-          {/* <button type='button' className='showcatogories-button' onClick={handleClick} >
-            <div className="hamburgerMenuIconInButton">
-              <GiHamburgerMenu color='white' size={28} />
-            </div>
-            <p className='showcatogories'>Kateqoriyaları Göstər</p>
-          </button>
-          <div className={!active ? "passive selections" : "selections"} style={{ display: active ? "flex" : "none" }}> */}
           <button
             type="button"
             className="showcatogories-button"
@@ -154,8 +138,6 @@ const Navbars = () => {
             <GiHamburgerMenu color="white" size={28} />
             <p className="showcatogories">Kateqoriyaları Göstər</p>
           </button>
-
-          {/*//!deyisdir*/}
           <div
             className={!active ? "passive selections" : "selections"}
             style={{ display: active ? "flex" : "none" }}
@@ -200,7 +182,7 @@ const Navbars = () => {
           </div>
         </div>
         <div className="contact">
-          <button className='contactbutton'> {/* onClick={closePopup}*/}
+          <button className='contactbutton'>
             <FiPhoneCall className='fiphonecall' size={26} />
             <p className='contactword'>Əlaqə</p>
           </button>

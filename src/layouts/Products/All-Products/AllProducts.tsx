@@ -5,8 +5,7 @@ import './AllProducts.scss';
 import Images from "../../../components/images"
 
 const AllProducts = () => {
-    // let products = document.getElementsByClassName("main-products")
-    let products = document.querySelector(".main-products")
+    // let products = document.querySelector(".main-products")
     const [images, setImages] = useState([]);
     //fixed
     const link = "http://localhost:3000/cards";
