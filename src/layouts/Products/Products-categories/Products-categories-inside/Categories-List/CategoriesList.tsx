@@ -11,16 +11,16 @@ const CategoriesList = (props: any) => {
     <div className="total-lists-in-categories">
       <ul className='categories-list-links-list'>
         <li><span onClick={handleClick} className='categories-list-links' id='phone'>Smartfon</span></li>
-        <li><span onClick={handleClick} className='categories-list-links' id=''>Qulaqlıq</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id='airpods'>Qulaqlıq</span></li>
         <li><span onClick={handleClick} className='categories-list-links' id='mouse'>Maus</span></li>
-        <li><span onClick={handleClick} className='categories-list-links' id=''>Planşet</span></li>
-        <li><span onClick={handleClick} className='categories-list-links'>Komputerler və Notbuklar</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id='ipad'>Planşet</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id='laptop'>Komputerler və Notbuklar</span></li>
 
-        <li><span onClick={handleClick} className='categories-list-links'>Qələm</span></li>
-        <li><span onClick={handleClick} className='categories-list-links'>Smart Saatlar</span></li>
-        <li><span onClick={handleClick} className='categories-list-links'>Aksesuarlar</span></li>
-        <li><span onClick={handleClick} className='categories-list-links'>Televizor</span></li>
-        <li><span onClick={handleClick} className='categories-list-links'>Qaz pilitəsi</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id='pen'>Qələm</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id='smartwatch'>Smart Saatlar</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'id='aaccessories'>Aksesuarlar</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'id='television'>Televizor</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'id='gasstove'>Qaz pilitəsi</span></li>
 
         <li><span onClick={handleClick} className='categories-list-links'>Aspirator</span></li>
         <li><span onClick={handleClick} className='categories-list-links'>Çaydan</span></li>
