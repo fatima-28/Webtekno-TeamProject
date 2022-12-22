@@ -1,5 +1,6 @@
 import React from 'react'
 import './MainPageBannerSecond.scss'
+import '../../../../responsibilty/MainPageBannerSecondIphoneSe.scss'
 import backtoschool from '../../../../images/backtoschool.jpeg'
 import { Link } from 'react-router-dom'
 const MainPageBannerSecond = () => {
