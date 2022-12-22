@@ -1,0 +1,32 @@
+$primary-color: #000;
+$button-color: #00a651;
+$third-color: #fff;
+$cream-color: #ebebeb;
+
+.basket-products-item{
+    padding: 10px 25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid $cream-color;
+.item-img{
+    width: 70px !important;
+    img{
+        width: 80%;
+    }
+}
+.item-name{
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.item-price-count{
+    float: left;
+    color: $button-color;
+    font-size: 17px;
+    font-weight: 500;
+}
+.item-delete{
+    cursor: pointer;
+}
+}

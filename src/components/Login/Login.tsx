@@ -1,7 +1,7 @@
 import './Login.scss'
 
 import { FiUserPlus } from 'react-icons/fi'
-import { FC, useState } from 'react'
+import { useState } from 'react'
 
 import { SignUpPopupPage } from '../SignUpPopupPage/SignUpPopupPage'
 import { LoginPage } from '../LoginPage/LoginPage'

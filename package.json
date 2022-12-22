@@ -13,9 +13,11 @@
     "@types/react-js-pagination": "^3.0.4",
     "@types/react-slick": "^0.23.10",
     "bootstrap": "^5.2.3",
+    "install": "^0.13.0",
     "jquery": "^3.6.1",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
+    "react-crud-icons": "^1.2.1",
     "react-dom": "^18.2.0",
     "react-dropdown-select": "^4.9.0",
     "react-icons": "^4.7.1",
@@ -32,7 +34,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint-fix": "tsc --noEmit && eslint src/**/*.ts{,x} --fix"
   },
   "eslintConfig": {
     "extends": [

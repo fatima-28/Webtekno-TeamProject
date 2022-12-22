@@ -1,5 +1,6 @@
 import React from 'react'
 import './MainPageGridLeft.scss'
+import '../../../../../responsibilty/MainPageGridLeftIphoneSe.scss'
 import GridImg1 from '../../../../../images/notebook-banner.jpg'
 import LeftBannerProduct from './LeftBannerProduct/LeftBannerProduct'
 import GridImg2 from '../../../../../images/smartwatch-banner.jpg'

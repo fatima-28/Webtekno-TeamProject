@@ -1,34 +1,3 @@
-// import './Navbars.scss'
-// import '../../../reposonsivity/HeaderIphoneSe/HeaderIphoneSe.scss'
-// //? Images
-// import projectlogo from '../../../images/projectlogo.png'
-
-// import { SlBasket } from 'react-icons/sl'
-// import { GiHamburgerMenu } from 'react-icons/gi'
-// import { HiMagnifyingGlass } from 'react-icons/hi2'
-// import { FiPhoneCall } from 'react-icons/fi'
-// import { ImHeadphones } from 'react-icons/im'
-// import { BsPhone } from 'react-icons/bs'
-// import { MdOutlineComputer } from 'react-icons/md'
-// import { BsSmartwatch } from 'react-icons/bs'
-// import { ImWhatsapp } from 'react-icons/im'
-// import { BsTelephone } from 'react-icons/bs'
-// import { GrClose } from 'react-icons/gr'
-
-
-// import { Link } from 'react-router-dom'
-// import { useState } from 'react'
-// import React from 'react'
-// import { Login } from '../../Login/Login'
-
-// const Navbars = () => {
-//   const [active, setActive] = useState(false);
-//   const [close, setClose] = useState(false)
-
-//   const closePopup = () => {
-//     setClose(!close);
-//   };
-
 import React from "react";
 import "./Navbars.scss";
 import itemImg from "../../../images/itemBasket.jpeg";
@@ -38,8 +7,8 @@ import { FiUserPlus } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { FiPhoneCall } from "react-icons/fi";
-import { ImHeadphones } from "react-icons/im";
-import { BsPhone } from "react-icons/bs";
+import { ImHeadphones, ImWhatsapp } from "react-icons/im";
+import { BsPhone, BsTelephone } from "react-icons/bs";
 import { MdOutlineComputer } from "react-icons/md";
 import { BsSmartwatch } from "react-icons/bs";
 
@@ -48,9 +17,15 @@ import { useState } from "react";
 //? Images
 import projectlogo from "../../../images/projectlogo.png";
 import BasketDropdownProduct from "../../BasketDropdownProduct/BasketDropdownProduct";
+import { GrClose } from "react-icons/gr";
 
 const Navbars = () => {
   const [active, setActive] = useState(false);
+
+  const [close, setClose] = useState(false);
+  const closePopup = () => {
+    setClose(!close);
+  };
 
   const handleClick = () => {
     setActive(!active);
@@ -63,15 +38,29 @@ const Navbars = () => {
 
   return (
     <>
-      <nav className='navbartop'>
+      <nav className="navbartop">
         <div className="logo-container">
-          <Link to="/"><img src={projectlogo} alt="" /></Link>
+          <Link to="/">
+            <img src={projectlogo} alt="" />
+          </Link>
         </div>
         <div className="navbar-links">
           <ul>
-            <li><Link className='links' to=''>Ana Səhifə</Link></li>
-            <li><Link className='links' to='products'>Məhsullar</Link></li>
-            <li><Link className='links' to=''>Önərilənlər</Link></li>
+            <li>
+              <Link className="links" to="">
+                Ana Səhifə
+              </Link>
+            </li>
+            <li>
+              <Link className="links" to="products">
+                Məhsullar
+              </Link>
+            </li>
+            <li>
+              <Link className="links" to="">
+                Önərilənlər
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-icons">
@@ -79,9 +68,8 @@ const Navbars = () => {
             <GiHamburgerMenu size={38} color="#001" />
           </div>
 
-
-          <div className="basket">
-            <SlBasket className='storeicon' size={38} />
+          <button onClick={showBasketDropdown} className="basket">
+            <SlBasket className="storeicon" size={38} />
             <div className="countsquare">0</div>
             <div
               className="basket-dropdown"
@@ -108,10 +96,12 @@ const Navbars = () => {
                 />
               </div>
 
-              <div className="basket-price">Toplam : <span>5500 ₼</span></div>
+              <div className="basket-price">
+                Toplam : <span>5500 ₼</span>
+              </div>
               <Link className="btn-link-basket" to="/basket">
                 {" "}
-               Səbətə get
+                Səbətə get
               </Link>
             </div>
           </button>
@@ -128,7 +118,7 @@ const Navbars = () => {
         </div>
       </nav>
 
-      <nav className='navbarbottom'>
+      <nav className="navbarbottom">
         <div className="categories">
           <button
             type="button"
@@ -143,70 +133,91 @@ const Navbars = () => {
             style={{ display: active ? "flex" : "none" }}
           >
             <ul>
+              <li>
+                <Link className="selection-link selection-link1" to="">
+                  <div className="icon-part">
+                    <BsPhone className="icon" size={40} color="black" />
+                  </div>
+                  <p className="text-part">Telefonlar</p>
+                </Link>
+              </li>
 
-              <li><Link className='selection-link selection-link1' to=''>
-                <div className="icon-part">
-                  <BsPhone className='icon' size={40} color="black" />
-                </div>
-                <p className="text-part">Telefonlar</p>
-              </Link></li>
+              <li>
+                <Link className="selection-link" to="">
+                  <div className="icon-part">
+                    <ImHeadphones className="icon" size={40} color="black" />
+                  </div>
+                  <p className="text-part">Qulaqlıqlar</p>
+                </Link>
+              </li>
 
-              <li><Link className='selection-link' to=''>
-                <div className="icon-part">
-                  <ImHeadphones className='icon' size={40} color="black" />
-                </div>
-                <p className="text-part">Qulaqlıqlar</p>
-              </Link></li>
+              <li>
+                <Link className="selection-link" to="">
+                  <div className="icon-part">
+                    <MdOutlineComputer
+                      className="icon"
+                      size={40}
+                      color="black"
+                    />
+                  </div>
+                  <p className="text-part">Komputerlər və Notbuklar</p>
+                </Link>
+              </li>
 
-              <li><Link className='selection-link' to=''>
-                <div className="icon-part">
-                  <MdOutlineComputer className='icon' size={40} color="black" />
-                </div>
-                <p className="text-part">Komputerlər və Notbuklar</p>
-              </Link></li>
-
-              <li><Link className='selection-link selection-link2' to=''>
-                <div className="icon-part">
-                  <BsSmartwatch className='icon' size={40} color="black" />
-                </div>
-                <p className="text-part">Smart Saatlar</p>
-              </Link></li>
-
+              <li>
+                <Link className="selection-link selection-link2" to="">
+                  <div className="icon-part">
+                    <BsSmartwatch className="icon" size={40} color="black" />
+                  </div>
+                  <p className="text-part">Smart Saatlar</p>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
         <div className="search">
           <div className="find-space">
-            <input type="text" name="" id="" placeholder='Məhsul axtar' />
-            <button className='findericon'><HiMagnifyingGlass color='green' size={30} /></button>
+            <input type="text" name="" id="" placeholder="Məhsul axtar" />
+            <button className="findericon">
+              <HiMagnifyingGlass color="green" size={30} />
+            </button>
           </div>
         </div>
         <div className="contact">
-          <button className='contactbutton'>
-            <FiPhoneCall className='fiphonecall' size={26} />
-            <p className='contactword'>Əlaqə</p>
+          <button className="contactbutton">
+            <FiPhoneCall className="fiphonecall" size={26} />
+            <p className="contactword">Əlaqə</p>
           </button>
 
-          <div className={!close ? "popup" : "popup showpopup"} style={{ visibility: close ? "visible" : "hidden" }}>
+          <div
+            className={!close ? "popup" : "popup showpopup"}
+            style={{ visibility: close ? "visible" : "hidden" }}
+          >
             <div className="inner">
               <div className="top-inner">
-                <button className='closeButtonInInner' onClick={closePopup}><GrClose color='black' size={20} className='closeButtonIconInInner' /></button>
+                <button className="closeButtonInInner" onClick={closePopup}>
+                  <GrClose
+                    color="black"
+                    size={20}
+                    className="closeButtonIconInInner"
+                  />
+                </button>
               </div>
-              <h1 className='popup-header-text'>Əlaqə</h1>
+              <h1 className="popup-header-text">Əlaqə</h1>
               <button className="contactWithUs">
-                <ImWhatsapp color='white' size={20} />
-                <h4 className='contactWithUsText'>Whatsapp</h4>
+                <ImWhatsapp color="white" size={20} />
+                <h4 className="contactWithUsText">Whatsapp</h4>
               </button>
               <button className="callUs">
                 <BsTelephone />
-                <h4 className='callUsText'>Bizə zəng et</h4>
+                <h4 className="callUsText">Bizə zəng et</h4>
               </button>
             </div>
           </div>
         </div>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbars
+export default Navbars;

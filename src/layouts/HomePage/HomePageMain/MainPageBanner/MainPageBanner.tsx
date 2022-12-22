@@ -1,5 +1,6 @@
 import React from 'react'
 import './MainPageBanner.scss'
+import '../../../../Resonsivities/Home/MainPageMainBanner/_mainpageMainBanner.scss';
 import mainpageBannerBg from '../../../../images/the-future-of-health-is-on-your-wrist.jpg'
 import { AiOutlineApple } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
