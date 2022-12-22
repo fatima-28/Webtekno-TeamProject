@@ -1,0 +1,57 @@
+@media only screen and (width: 375px) {
+  .mainpage-banner {
+    width: 100%;
+    height: 220px;
+
+    .mainpage-banner-image {
+      width:100%;
+      height: 65%;
+
+
+      img {
+        width: 100%;
+        height: 100%;
+       
+      }
+
+      .mainpage-context {
+        margin-left: 100px;
+        width: 30%;
+        height: 90%;
+       
+
+        &-top {
+          width: 100%;
+          height: 70px;
+
+         
+          .logo-and-title {
+            width: 120px;
+            height: 45px;
+
+          }
+
+          .version {
+           
+            font-size: 14px;
+          }
+        }
+
+        &-bottom {
+          margin-left: 30px;
+          width: 350%;
+          height: 200px;
+         
+
+          h1 {
+            font-size: 18px;
+          }
+
+          .banner-link {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
