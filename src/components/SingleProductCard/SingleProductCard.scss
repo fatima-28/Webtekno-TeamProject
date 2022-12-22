@@ -77,13 +77,13 @@
         color: $button-color;
         background-color: $third-color;
         border-radius: 5px;
-    }
-      
+    }  
     }
     &:hover {
+
       .card-button {
 
-        &:hover {
+        &:hover {         
           background-color: $button-color !important;
           color: $third-color !important;
         }

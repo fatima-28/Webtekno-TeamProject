@@ -1,8 +1,10 @@
 import React from 'react'
 import './MainPageContainer.scss'
+import '../../../../Resonsivities/Home/MainPageContainer/_mainpageContainer.scss';
 import FirstImg from '../../../../images/image1.png'
 import SecondImg from '../../../../images/image2.png'
 import ThirdImg from '../../../../images/image3.png'
+
 
 const MainPageContainer = () => {
   return (

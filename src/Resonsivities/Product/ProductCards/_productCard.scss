@@ -1,0 +1,38 @@
+@media only screen and (width: 375px) {
+  .main-products {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-left: 40px;
+    .product-single-card1 {
+      width: 150px;
+      height: 250px;
+      .single-card-item {
+        .card-item-text-part{
+          p{
+            font-size: 15px;
+          }
+        }
+        img {
+          height: 120px;
+          width: 80%;
+          
+        }
+      }
+    }
+  }
+
+  .all-products {
+    width: 65%;
+  }
+  .none-main-products {
+    display: none !important;
+  }
+  .pagination  {
+       right: 60px;
+   
+    position: relative;
+  }
+
+}
