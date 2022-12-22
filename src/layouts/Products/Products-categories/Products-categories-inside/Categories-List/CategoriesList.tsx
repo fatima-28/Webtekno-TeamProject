@@ -1,57 +1,61 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './CategoriesList.scss'
-const CategoriesList = () => {
+const CategoriesList = (props: any) => {
+  const { setCategory } = props;
+
+  const handleClick = ({target}:any) => {
+    setCategory(target.id);
+  }
+
   return (
     <div className="total-lists-in-categories">
+      <ul className='categories-list-links-list'>
+        <li><span onClick={handleClick} className='categories-list-links' id='phone'>Smartfon</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id=''>Qulaqlıq</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id='mouse'>Maus</span></li>
+        <li><span onClick={handleClick} className='categories-list-links' id=''>Planşet</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Komputerler və Notbuklar</span></li>
 
-    <ul className='categories-list-links-list'>
-      <li><Link className='categories-list-links' to='/'>Smartfon</Link></li>
-      <li><Link className='categories-list-links' to='/'>Qulaqlıq</Link></li>
-      <li><Link className='categories-list-links' to='/'>Maus</Link></li>
-      <li><Link className='categories-list-links' to='/'>Planşet</Link></li>
-      <li><Link className='categories-list-links' to='/'>Komputerler və Notbuklar</Link></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Qələm</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Smart Saatlar</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Aksesuarlar</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Televizor</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Qaz pilitəsi</span></li>
 
-      <li><Link className='categories-list-links' to='/'>Qələm</Link></li>
-      <li><Link className='categories-list-links' to='/'>Smart Saatlar</Link></li>
-      <li><Link className='categories-list-links' to='/'>Aksesuarlar</Link></li>
-      <li><Link className='categories-list-links' to='/'>Televizor</Link></li>
-      <li><Link className='categories-list-links' to='/'>Qaz pilitəsi</Link></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Aspirator</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Çaydan</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Əl blenderi</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Ət çəkən</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Fen</span></li>
 
-      <li><Link className='categories-list-links' to='/'>Aspirator</Link></li>
-      <li><Link className='categories-list-links' to='/'>Çaydan</Link></li>
-      <li><Link className='categories-list-links' to='/'>Əl blenderi</Link></li>
-      <li><Link className='categories-list-links' to='/'>Ət çəkən</Link></li>
-      <li><Link className='categories-list-links' to='/'>Fen</Link></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Kondisoner</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Meyvələr üçün quruducu</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Mətbəx Kombaynı</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Mikrodalğalı soba</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Mikser</span></li>
 
-      <li><Link className='categories-list-links' to='/'>Kondisoner</Link></li>
-      <li><Link className='categories-list-links' to='/'>Meyvələr üçün quruducu</Link></li>
-      <li><Link className='categories-list-links' to='/'>Mətbəx Kombaynı</Link></li>
-      <li><Link className='categories-list-links' to='/'>Mikrodalğalı soba</Link></li>
-      <li><Link className='categories-list-links' to='/'>Mikser</Link></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Multibişirici</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Partaryuyan</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Qəhvədəmləyən</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Saç Düzləndirici</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Sendviç Maşını</span></li>
 
-      <li><Link className='categories-list-links' to='/'>Multibişirici</Link></li>
-      <li><Link className='categories-list-links' to='/'>Partaryuyan</Link></li>
-      <li><Link className='categories-list-links' to='/'>Qəhvədəmləyən</Link></li>
-      <li><Link className='categories-list-links' to='/'>Saç Düzləndirici</Link></li>
-      <li><Link className='categories-list-links' to='/'>Sendviç Maşını</Link></li>
-      
-      <li><Link className='categories-list-links' to='/'>Şirəçəkən</Link></li>
-      <li><Link className='categories-list-links' to='/'>Solo Soba</Link></li>
-      <li><Link className='categories-list-links' to='/'>Soyuducu</Link></li>
-      <li><Link className='categories-list-links' to='/'>Toster</Link></li>
-      <li><Link className='categories-list-links' to='/'>Tozsoran</Link></li>
-      
-      <li><Link className='categories-list-links' to='/'>Ütü</Link></li>
-      <li><Link className='categories-list-links' to='/'>Buxarlı təmizləyici</Link></li>
-      <li><Link className='categories-list-links' to='/'>Gril</Link></li>
-      <li><Link className='categories-list-links' to='/'>Quraşdırılan soba</Link></li>
-      <li><Link className='categories-list-links' to='/'>Stolüstü soba</Link></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Şirəçəkən</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Solo Soba</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Soyuducu</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Toster</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Tozsoran</span></li>
 
-      <li><Link className='categories-list-links' to='/'>PlayStation</Link></li>
-      <li><Link className='categories-list-links' to='/'>Printer</Link></li>
-      <li><Link className='categories-list-links' to='/'>Qabyuyan</Link></li>
-    </ul>
+        <li><span onClick={handleClick} className='categories-list-links'>Ütü</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Buxarlı təmizləyici</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Gril</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Quraşdırılan soba</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Stolüstü soba</span></li>
+
+        <li><span onClick={handleClick} className='categories-list-links'>PlayStation</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Printer</span></li>
+        <li><span onClick={handleClick} className='categories-list-links'>Qabyuyan</span></li>
+      </ul>
     </div>
   )
 }

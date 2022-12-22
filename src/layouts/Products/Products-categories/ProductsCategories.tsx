@@ -2,10 +2,10 @@ import React from 'react'
 import './ProductsCategories.scss'
 import ProductsCategoriesInside from './Products-categories-inside/ProductsCategoriesInside'
 
-const ProductsCategories = () => {
+const ProductsCategories = (props: any) => {
     return (
         <section className="products-categories">
-            <ProductsCategoriesInside />
+            <ProductsCategoriesInside setCategory = {props.setCategory} setBrend = {props.setBrend} setRangePrice = {props.setRangePrice} />
         </section>
     )
 }
