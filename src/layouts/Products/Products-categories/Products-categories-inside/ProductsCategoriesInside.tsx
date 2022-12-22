@@ -6,17 +6,17 @@ import CategoriesPriceRangeTitle from './Categories-Price-Range-Title/Categories
 import CategoriesPriceRange from './Categories-Price-Range/CategoriesPriceRange'
 import CategoriesBrends from './Categories-Brends/CategoriesBrends'
 
-const ProductsCategoriesInside = () => {
+const ProductsCategoriesInside = (props: any) => {
     return (
         <div className='categories-inside'>
             <CategoriesTitle />
             <hr style={{ border: 'solid .1px #f8f9fa' }} />
-            <CategoriesList />
+            <CategoriesList setCategory={props.setCategory} />
             <CategoriesPriceRangeTitle />
             <hr style={{ marginTop: '20px', border: 'solid .1px #f8f9fa' }} />
-            <CategoriesPriceRange />
+            <CategoriesPriceRange setRangePrice={props.setRangePrice} />
             <hr style={{ marginTop: '20px', border: 'solid .1px #f8f9fa' }} />
-            <CategoriesBrends />
+            <CategoriesBrends setBrend={props.setBrend} />
         </div>
     )
 }
