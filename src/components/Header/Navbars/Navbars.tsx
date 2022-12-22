@@ -1,37 +1,64 @@
-import './Navbars.scss'
-import '../../../reposonsivity/HeaderIphoneSe/HeaderIphoneSe.scss'
+// import './Navbars.scss'
+// import '../../../reposonsivity/HeaderIphoneSe/HeaderIphoneSe.scss'
+// //? Images
+// import projectlogo from '../../../images/projectlogo.png'
+
+// import { SlBasket } from 'react-icons/sl'
+// import { GiHamburgerMenu } from 'react-icons/gi'
+// import { HiMagnifyingGlass } from 'react-icons/hi2'
+// import { FiPhoneCall } from 'react-icons/fi'
+// import { ImHeadphones } from 'react-icons/im'
+// import { BsPhone } from 'react-icons/bs'
+// import { MdOutlineComputer } from 'react-icons/md'
+// import { BsSmartwatch } from 'react-icons/bs'
+// import { ImWhatsapp } from 'react-icons/im'
+// import { BsTelephone } from 'react-icons/bs'
+// import { GrClose } from 'react-icons/gr'
+
+
+// import { Link } from 'react-router-dom'
+// import { useState } from 'react'
+// import React from 'react'
+// import { Login } from '../../Login/Login'
+
+// const Navbars = () => {
+//   const [active, setActive] = useState(false);
+//   const [close, setClose] = useState(false)
+
+//   const closePopup = () => {
+//     setClose(!close);
+//   };
+
+import React from "react";
+import "./Navbars.scss";
+import itemImg from "../../../images/itemBasket.jpeg";
+
+import { SlBasket } from "react-icons/sl";
+import { FiUserPlus } from "react-icons/fi";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { HiMagnifyingGlass } from "react-icons/hi2";
+import { FiPhoneCall } from "react-icons/fi";
+import { ImHeadphones } from "react-icons/im";
+import { BsPhone } from "react-icons/bs";
+import { MdOutlineComputer } from "react-icons/md";
+import { BsSmartwatch } from "react-icons/bs";
+
+import { Link } from "react-router-dom";
+import { useState } from "react";
 //? Images
-import projectlogo from '../../../images/projectlogo.png'
-
-import { SlBasket } from 'react-icons/sl'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { HiMagnifyingGlass } from 'react-icons/hi2'
-import { FiPhoneCall } from 'react-icons/fi'
-import { ImHeadphones } from 'react-icons/im'
-import { BsPhone } from 'react-icons/bs'
-import { MdOutlineComputer } from 'react-icons/md'
-import { BsSmartwatch } from 'react-icons/bs'
-import { ImWhatsapp } from 'react-icons/im'
-import { BsTelephone } from 'react-icons/bs'
-import { GrClose } from 'react-icons/gr'
-
-
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import React from 'react'
-import { Login } from '../../Login/Login'
+import projectlogo from "../../../images/projectlogo.png";
+import BasketDropdownProduct from "../../BasketDropdownProduct/BasketDropdownProduct";
 
 const Navbars = () => {
   const [active, setActive] = useState(false);
-  const [close, setClose] = useState(false)
-
-  const closePopup = () => {
-    setClose(!close);
-  };
 
   const handleClick = () => {
     setActive(!active);
   };
+  const [showDropdown, setShowDropdown] = useState(false);
+  function showBasketDropdown() {
+    setShowDropdown(!showDropdown);
+  }
 
   return (
     <>
@@ -48,33 +75,91 @@ const Navbars = () => {
         </div>
         <div className="navbar-icons">
           <div className="hamburger-menu">
-            <GiHamburgerMenu size={38} color='#001' />
+            <GiHamburgerMenu size={38} color="#001" />
           </div>
 
 
           <div className="basket">
             <SlBasket className='storeicon' size={38} />
             <div className="countsquare">0</div>
-          </div>
+            {/* </div>
 
           <div className="login-part">
             <Login />
           </div>
 
-          <div className="logout"><button className="logout-link">Log Out</button></div>
+          <div className="logout"><button className="logout-link">Log Out</button></div> */}
+
+            <div
+              className="basket-dropdown"
+              style={{ display: showDropdown ? "block" : "none" }}
+            >
+              <div className="basket-products">
+                <BasketDropdownProduct
+                  srcValue={itemImg}
+                  nameValue={"Iphone 11 64 GB | white(ağ)"}
+                  priceValue={1380}
+                  count={1}
+                />
+                <BasketDropdownProduct
+                  srcValue={itemImg}
+                  nameValue={"Iphone 11 64 GB | white(ağ)"}
+                  priceValue={2500}
+                  count={2}
+                />
+                <BasketDropdownProduct
+                  srcValue={itemImg}
+                  nameValue={"Iphone 11 64 GB | white(ağ)"}
+                  priceValue={3400}
+                  count={1}
+                />
+              </div>
+
+              <div className="basket-price">Toplam : <span>5500 ₼</span></div>
+              <Link className="btn-link-basket" to="/basket">
+                {" "}
+                Səbətə get
+              </Link>
+            </div>
+          </button>
+
+          <div className="login">
+            <button>
+              <FiUserPlus className="usericon" size={30} />
+            </button>
+          </div>
+
+          <div className="logout">
+            <button className="logout-link">Log Out</button>
+          </div>
+          {/*//!deyisdir*/}
 
         </div>
       </nav>
 
       <nav className='navbarbottom'>
         <div className="categories">
-          <button type='button' className='showcatogories-button' onClick={handleClick} >
+          {/* <button type='button' className='showcatogories-button' onClick={handleClick} >
             <div className="hamburgerMenuIconInButton">
               <GiHamburgerMenu color='white' size={28} />
             </div>
             <p className='showcatogories'>Kateqoriyaları Göstər</p>
           </button>
-          <div className={!active ? "passive selections" : "selections"} style={{ display: active ? "flex" : "none" }}>
+          <div className={!active ? "passive selections" : "selections"} style={{ display: active ? "flex" : "none" }}> */}
+          <button
+            type="button"
+            className="showcatogories-button"
+            onClick={handleClick}
+          >
+            <GiHamburgerMenu color="white" size={28} />
+            <p className="showcatogories">Kateqoriyaları Göstər</p>
+          </button>
+
+          {/*//!deyisdir*/}
+          <div
+            className={!active ? "passive selections" : "selections"}
+            style={{ display: active ? "flex" : "none" }}
+          >
             <ul>
 
               <li><Link className='selection-link selection-link1' to=''>
@@ -115,7 +200,7 @@ const Navbars = () => {
           </div>
         </div>
         <div className="contact">
-          <button className='contactbutton' onClick={closePopup}>
+          <button className='contactbutton'> {/* onClick={closePopup}*/}
             <FiPhoneCall className='fiphonecall' size={26} />
             <p className='contactword'>Əlaqə</p>
           </button>
