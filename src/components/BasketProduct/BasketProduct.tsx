@@ -1,12 +1,29 @@
-import React from "react";
+import React, { FC } from "react";
+import "./BasketProduct.scss";
 
-const BasketProduct = () => {
+type totalProps = {
+  srcValue: string;
+  nameValue: string;
+  priceValue: number;
+  typeValue:string;
+  count: number;
+};
+const BasketProduct: FC<totalProps> = ({
+  srcValue,
+  nameValue,
+  typeValue,
+  priceValue,
+  count,
+}) => {
   return (
-    <>
-      <div className="product-img"></div>
+    <div className="basket-product">
+
+      <div className="product-img">
+        <img src={srcValue} alt="" />
+      </div>
       <div className="product-name">
-        <span>Smartfon</span>
-        <h3>Iphone 11 64 GB | White (ağ) </h3>
+        <span>{typeValue}</span>
+        <h3>{nameValue}</h3>
       </div>
       <div className="product-count">
         <button className="minus">-</button>
@@ -16,9 +33,14 @@ const BasketProduct = () => {
         <button className="plus">+</button>
       </div>
       <div className="product-price">
-        <h3> 2760.00 ₼ </h3>
+        <h3>{priceValue} ₼
+            <span>{` x (${count})`} </span></h3>
       </div>
-    </>
+
+
+
+
+    </div>
   );
 };
 export default BasketProduct;

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbars.scss";
-import itemImg from '../../images/itemBasket.jpeg'
-
+import itemImg from "../../../images/itemBasket.jpeg";
 
 import { SlBasket } from "react-icons/sl";
 import { FiUserPlus } from "react-icons/fi";
@@ -68,14 +67,34 @@ const Navbars = () => {
             <div className="countsquare">0</div>
             <div
               className="basket-dropdown"
-              style={{ display: showDropdown ? "flex" : "none" }}
+              style={{ display: showDropdown ? "block" : "none" }}
             >
               <div className="basket-products">
-                <BasketDropdownProduct srcValue={itemImg} nameValue={"Iphone 11 64 GB | white(ağ)"} priceValue={0} count={0} />
-                
+                <BasketDropdownProduct
+                  srcValue={itemImg}
+                  nameValue={"Iphone 11 64 GB | white(ağ)"}
+                  priceValue={1380}
+                  count={1}
+                />
+                <BasketDropdownProduct
+                  srcValue={itemImg}
+                  nameValue={"Iphone 11 64 GB | white(ağ)"}
+                  priceValue={2500}
+                  count={2}
+                />
+                <BasketDropdownProduct
+                  srcValue={itemImg}
+                  nameValue={"Iphone 11 64 GB | white(ağ)"}
+                  priceValue={3400}
+                  count={1}
+                />
               </div>
 
-              <div className="basket-price"></div>
+              <div className="basket-price">Toplam : <span>5500 ₼</span></div>
+              <Link className="btn-link-basket" to="/basket">
+                {" "}
+               Səbətə get
+              </Link>
             </div>
           </button>
 
