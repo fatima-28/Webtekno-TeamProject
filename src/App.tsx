@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 
 import { Route, Routes } from 'react-router-dom'
 import { Basket } from "./layouts/Basket/Basket";
+import { OfficialDelivery } from "./layouts/OfficialDelivery/OfficialDelivery";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={< HomePage />}/>
         <Route path='/products' element={<Products />}/>
         <Route path="/basket" element={<Basket/>}/>
+        <Route path="/delivery" element={<OfficialDelivery />} />
       </Routes>
       <Footer />
     </>

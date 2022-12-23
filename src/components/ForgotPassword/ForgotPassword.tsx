@@ -8,7 +8,7 @@ export const ForgotPassword = () => {
             <div className="inputsInForgotPagesPart">
                 <input className='inputsInForgotPages' type="text" placeholder='Phone number, username, or email' />
                 <input className='inputsInForgotPages' type="password" placeholder='Password' />
-                <button className="sendToChangePasswordButton">Log In</button>
+                <button className="sendToChangePasswordButton">Change</button>
             </div>
         </div>
     )

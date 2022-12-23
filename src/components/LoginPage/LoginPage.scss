@@ -1,4 +1,4 @@
-@import '../variables';
+@import '../../components/variables';
 
 .innerLoginPopupPage {
     width: 100%;
@@ -46,10 +46,9 @@
             align-items: center;
             border: solid 1px #000;
 
-            &:has(> #password:focus) {
-                outline: auto;
+     
+        
             }
-
             #password {
                 width: 215px;
                 height: 35px;
@@ -58,6 +57,7 @@
                 border: none;
                 outline: none;
             }
+        
 
             .showHidePassword {
                 width: 35px;
@@ -70,9 +70,12 @@
                 justify-content: center;
             }
         }
+    
 
         .forgotPasswordButton {
-            width: fit-content;
+           
+        text-decoration: none !important;
+            width: 150px !important;
             font-size: 13px;
             color: blue;
             background-color: $white;
@@ -80,14 +83,14 @@
             cursor: pointer;
             text-decoration: underline;
         }
-    }
+    
 
     .submitButton {
-        width: 250px;
-        height: 35px;
+        width: 250px !important;
+        height: 35px !important;
         border: none;
         border-radius: 1px;
-        background-color: $greenbuttoncolor;
+        background-color: $greenbuttoncolor !important;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -95,4 +98,5 @@
         font-size: 15px;
         cursor: pointer;
     }
+
 }

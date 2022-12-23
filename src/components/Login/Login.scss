@@ -67,8 +67,9 @@
                     gap: 20px;
 
                     .linkButton {
-                        text-decoration: none;
+                        text-decoration: none !important;
                         font-size: 15px;
+                        width: 100px;
                         color: black;
                         border: none;
                         background-color: white;

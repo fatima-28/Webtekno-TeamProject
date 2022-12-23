@@ -36,6 +36,21 @@ const Navbars = () => {
   function showBasketDropdown() {
     setShowDropdown(!showDropdown);
   }
+  // let searchBar = document.getElementsByClassName('find-space');
+  // let productNames = document.getElementsByClassName('card-item-title');
+  // searchBar.addEventListener('keyup', function () {
+  //   productNames.forEach(name => {
+
+
+  //     let product = name.parentNode.parentNode.parentNode;
+  //     if (name.innerHTML.toLowerCase().includes(searchBar.value.toLowerCase())) {
+  //       product.style = 'display:block';
+  //     }
+  //     else {
+  //       product.style = 'display:none';
+  //     }
+  //   })
+  // })
 
   return (
     <>

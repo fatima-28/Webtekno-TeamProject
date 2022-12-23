@@ -77,10 +77,10 @@
     }
 
     .signUpButton {
-        width: 150px;
-        height: 50px;
-        border-radius: 20px;
-        border: solid 3px $black;
+        width: 150px !important;
+        height: 50px !important;
+        border-radius: 20px ;
+        border: solid 2px $black !important;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -94,6 +94,7 @@
             background-color: $button-color;
             color: $white;
             border: solid 1px;
+              border:none !important;
 
         }
     }
