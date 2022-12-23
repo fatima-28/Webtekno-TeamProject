@@ -33,7 +33,7 @@ export const Basket = () => {
               <h3>Toplam</h3>
               <span className="total-price-"> 3260.00 ₼</span>
             </div>
-            <Link className="order-btn" to="#" >Sifarişi rəsmiləşdir</Link>
+            <Link className="order-btn" to="/delivery" >Sifarişi rəsmiləşdir</Link>
           </div>
         </div>
       </div>
